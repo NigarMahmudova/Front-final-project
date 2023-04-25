@@ -1,0 +1,364 @@
+// Slider section start
+.slider {
+    max-height: 768px;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    .banner-wrapper {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        img {
+            width: 45%;
+            height: 100%;
+            margin-left: 40px;
+            margin-right: 40px;
+            filter: drop-shadow(-70px 20px 40px rgba(0, 0, 0, .24));
+        }
+
+        .banner-info {
+            width: 50%;
+            float: right;
+            height: 100%;
+            position: relative;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .banner-header {
+                font-weight: 800;
+                font-size: 34px;
+                color: #fff;
+                margin-bottom: 20px;
+                line-height: normal;
+                width: 80%;
+            }
+
+            .banner-desc {
+                width: 80%;
+                font-weight: 400;
+                font-family: CocoSharp, Arial;
+                font-size: 14px;
+                color: #fff;
+                margin-bottom: 40px;
+                line-height: 25px;
+            }
+
+            .banner-btn {
+                a {
+                    margin-right: 10px;
+                    line-height: unset;
+                    display: inline-flex;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    padding: 16px 25px;
+                    font-size: 14px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Slider section end
+
+// Statistic section start
+.statistic {
+    padding: 30px 0;
+    margin-bottom: 20px;
+
+    .statistic-box {
+        padding: 40px 50px;
+        text-align: center;
+        background: #FAFAFA;
+        border-radius: 10px;
+
+        .statistic-caption {
+            line-height: 18px;
+            font-size: 18px;
+            color: #000;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+        }
+
+        .statistic-value {
+            font-size: 52px;
+            line-height: normal;
+            color: #FF6400;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+        }
+
+        .statistic-desc {
+            line-height: 14px;
+            font-weight: 400;
+            color: #000;
+            margin-top: -10px;
+            margin-bottom: 45px;
+            font-size: 14px;
+            font-family: CocoSharp, Arial;
+        }
+
+        .statistic-link {
+            line-height: 20px;
+            background: #FF6400;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            font-family: CocoSharp, Arial;
+            padding: 15px 45px;
+            box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+            display: inline-block;
+        }
+    }
+}
+
+// Statistic section end
+
+// Ucard section start
+.ucard-section {
+    padding: 35px 0 0;
+
+    .ucard-wrapper {
+        background: #fafafa;
+        border-radius: 10px;
+        align-items: center;
+
+        .ucard {
+            width: 45%;
+            height: 400px;
+            position: relative;
+            // margin-top: 20px;
+
+            img {
+                height: 495px;
+                position: absolute;
+                top: -95px;
+                right: 0;
+                float: right;
+            }
+        }
+
+        .ucard-text {
+            width: 50%;
+            padding-right: 20px;
+            padding-left: 70px;
+
+            .ucard-header {
+                line-height: 28px;
+                font-weight: 800;
+                font-size: 28px;
+                color: #FF6400;
+                margin: 0 0 20px;
+            }
+
+            .ucard-desc {
+                font-weight: 400;
+                font-size: 14px;
+                color: #000;
+                line-height: 1.43;
+                margin-bottom: 40px;
+                padding-right: 10px;
+            }
+
+            .links {
+                margin-bottom: 30px;
+
+                .link {
+                    display: inline-block;
+                    margin-right: 10px;
+
+                    .link-img {
+                        width: 135px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .ucard-extras {
+                .btn {
+                    display: inline-block;
+                    padding: 14px 30px;
+                    font-size: 14px;
+                    border-radius: 25px;
+                    font-weight: 600;
+                    text-align: center;
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    color: #969696;
+                    line-height: 16px;
+                }
+
+                .fill-orange {
+                    background: #FF6400;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+// Ucard section end
+
+// Exchange section start
+.exchange {
+    padding: 30px 0;
+}
+
+// Exchange section end
+
+// News section start
+
+.news {
+    padding: 0 0 30px;
+
+    .news-wrapper {
+        .news-card {
+            background: #FAFAFA;
+            padding: 30px;
+            border-radius: 10px;
+            transition: .3s;
+            position: relative;
+            height: 100%;
+
+            .news-name {
+                font-family: CocoSharp, Arial;
+                font-weight: 700;
+                font-size: 16px;
+                color: #FF6400;
+                display: block;
+                overflow: hidden;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+
+            .news-summary {
+                font-weight: 200;
+                font-size: 14px;
+                color: #000;
+                line-height: 23px;
+                overflow: hidden;
+            }
+
+            .news-date {
+                line-height: 12px;
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 12px;
+                color: rgba(50, 50, 50, .5);
+                margin-top: 15px;
+            }
+
+            &:hover {
+                background: #FF6400;
+
+                .news-name,
+                .news-summary,
+                .news-date {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .news-btn {
+        margin-top: 25px;
+        text-align: center;
+
+        a {
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+            font-size: 14px;
+            display: inline-block;
+            border-radius: 25px;
+            background: #FF6400;
+            color: #fff;
+            padding: 17px 25px;
+            line-height: 16px;
+        }
+    }
+}
+
+// News section end
+
+// Network section start
+.network {
+    .header-width {
+        width: 30%;
+    }
+
+    .network-header {
+        font-size: 28px;
+        color: #FF6400;
+        font-weight: 800;
+        line-height: normal;
+        margin-bottom: 23px;
+    }
+
+    .network-summary {
+        line-height: 20px;
+        // font-family: CocoSharp, Arial;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(0, 0, 0, .8);
+        width: 70%;
+    }
+
+    .network-btn {
+        font-size: 14px;
+        display: inline-block;
+        font-weight: 700;
+        padding: 15px 40px;
+        background: #FF6400;
+        border-radius: 25px;
+        color: #fff;
+        box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+        margin-top: 23px;
+        line-height: 20px;
+        font-family: CocoSharp, Arial;
+    }
+
+    .network-location {
+        padding: 0 15px;
+        height: 320px;
+        padding: 45px 65px;
+        position: relative;
+        overflow: hidden;
+        background: #FAFAFA;
+        border-radius: 10px;
+
+        .network-location-img {
+            position: absolute;
+            bottom: -3px;
+            right: 0;
+            overflow: hidden;
+
+            img {
+                height: 250px;
+            }
+        }
+    }
+
+    .network-que {
+        height: 320px;
+        padding: 45px 65px;
+        position: relative;
+        background: #FAFAFA;
+        border-radius: 10px;
+
+        .network-que-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            pointer-events: none;
+        }
+    }
+}
+// Network section end

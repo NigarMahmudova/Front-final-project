@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    @font-face {
+        font-family: CocoSharp, Arial;
+        src: url(../fonts/Coco-Sharp-Regular-trial.ttf);
+    }
+    line-height: 15px;
+    font-weight: 400;
+    font-size: 15px;
+}

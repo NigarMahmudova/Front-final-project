@@ -1,0 +1,272 @@
+// Header section start
+.wrapper {
+    position: relative;
+    z-index: 123;
+    background: #FAFAFA;
+
+    .header-top {
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .top-left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                transform: scale(.9);
+                transform-origin: left center;
+                float: left;
+                margin-right: 30px;
+
+                img {
+                    width: 27px;
+                    height: 28px;
+                }
+            }
+
+            .top-menu {
+                .top-menu-link {
+                    display: inline-block;
+                    line-height: 12px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #323232;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        .top-right {
+            .top-options {
+                display: inline-flex;
+                line-height: 20px;
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 20px;
+                color: #FF7A00;
+                box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
+                border-radius: 5px;
+                overflow: hidden;
+                height: 35px;
+                background: #fff;
+
+                .top-option {
+                    line-height: 12px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #323232;
+                    padding: 10px 20px;
+                }
+
+                .option-active {
+                    opacity: 1;
+                    font-weight: 600;
+                    color: #FF7A00 !important;
+                    border-radius: 5px;
+                    border: 1px solid #FF7A00;
+                }
+            }
+
+            .top-mode {
+                padding: 9px 10px;
+                display: inline-block;
+                border-radius: 5px;
+                margin-left: 10px;
+                box-shadow: 0 2px 14px -10px rgba(0, 0, 0, .3);
+                background-color: #323232;
+            }
+
+            .top-langs {
+                display: inline-flex;
+                align-items: center;
+                border-radius: 5px;
+                height: 35px;
+                margin-left: 10px;
+
+                .lang-eng,
+                .lang-rus {
+                    line-height: 12px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    box-shadow: 0 2px 14px -10px rgba(0, 0, 0, .3);
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                    color: #323232;
+                    padding: 0 8px;
+                    margin-right: 10px;
+                    height: 35px;
+                    background: #fff;
+                    border-radius: 5px;
+                    font-family: CocoSharp, Arial;
+                }
+            }
+
+            .top-search {
+                cursor: pointer;
+                box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
+                width: 35px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 35px;
+                background: #fff;
+                border-radius: 5px;
+
+                .search-icon {
+                    color: #323232;
+                }
+            }
+        }
+    }
+}
+
+.nav-menu {
+    .nav-menu-left {
+        float: left;
+
+        .menu-link-first {
+            padding-left: 0 !important;
+        }
+
+        .menu-link {
+            display: inline-block;
+            padding: 30px 15px;
+            font-size: 18px;
+            color: #000;
+            line-height: 18px;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+        }
+    }
+
+    .nav-menu-right {
+
+        .nav-tel,
+        .ibanking {
+            color: #000;
+            line-height: 20px;
+            padding: 8px 15px;
+            font-family: CocoSharp, Arial;
+            font-size: 14px;
+            border-radius: 25px;
+            border: 1px solid rgba(0, 0, 0, .1);
+            font-weight: 700;
+        }
+
+        .nav-tel {
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid rgba(0, 0, 0, .1);
+            font-weight: 600;
+            height: 45px;
+
+            .phone-icon {
+                margin-right: 10px;
+                color: #FF6400;
+            }
+        }
+
+        .ibanking {
+            padding: 14px 15px !important;
+
+            .ibanking-icon {
+                margin-right: 10px;
+                color: #FF6400;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Header section end
+
+// Footer section start
+.footer {
+    padding: 75px 0 60px;
+
+    .footer-menu-list {
+        .first {
+            line-height: 14px;
+            font-family: CocoSharp, Arial;
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .footer-children {
+            padding-top: 17px;
+            display: flex;
+            flex-direction: column;
+
+            .child {
+                font-size: 12px;
+                color: #000;
+                line-height: 35px;
+                font-weight: 400;
+                // font-family: CocoSharp, Arial;
+            }
+        }
+    }
+
+    .footer-links {
+        padding: 50px 0 20px;
+        border-bottom: 1px solid #D6D9DB;
+
+        .footer-link {
+            margin-right: 12px;
+
+            i {
+                font-size: 24px;
+                color: #a1a1a1;
+                text-align: center;
+            }
+
+            .orange {
+                color: #FF6400;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding-top: 30px;
+
+        .bottom-left {
+            .footer-text {
+                line-height: 12px;
+                font-size: 12px;
+                font-weight: 500;
+                // font-family: CocoSharp, Arial
+            }
+
+            .diff-text {
+                font-weight: 200;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+
+        .bottom-right {
+            .adif {
+                width: 60px;
+                height: 45px;
+            }
+
+            .ehp {
+                width: 94px;
+                height: 45px;
+            }
+
+            a{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+// Footer section end
