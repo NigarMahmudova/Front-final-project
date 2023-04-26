@@ -107,6 +107,34 @@
                 }
             }
 
+            .top-basket {
+                margin-right: 10px;
+                box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
+                width: 35px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 35px;
+                background: #fff;
+                border-radius: 5px;
+
+                i {
+                    color: #323232;
+                    position: relative;
+
+                    #count {
+                        position: absolute;
+                        font-size: 12px;
+                        background-color: #F28C0D;
+                        color: #ffffff;
+                        padding: 4px 6px;
+                        border-radius: 100%;
+                        top: -18px;
+                        right: -11px;
+                    }
+                }
+            }
+
             .top-search {
                 cursor: pointer;
                 box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
@@ -263,10 +291,11 @@
                 height: 45px;
             }
 
-            a{
+            a {
                 margin-left: 30px;
             }
         }
     }
 }
+
 // Footer section end

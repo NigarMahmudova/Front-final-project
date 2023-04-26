@@ -1,0 +1,112 @@
+// .btn{
+//     display: inline-block;
+//         padding: 14px 30px;
+//         font-size: 14px;
+//         line-height: 14px;
+//         background: #ff6400;
+//         border-radius: 25px;
+//         box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+//         color: #fff !important;
+//         font-weight: 600;
+// }
+.empty-basket {
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 15px 25px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    width: 1200px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+
+    i {
+        background-color: #fff1e6;
+        color: #ff6400;
+        font-size: 24px;
+        padding: 20px;
+        border-radius: 50%;
+    }
+
+    span {
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    a {
+        @extend .btn;
+    }
+}
+
+
+.basket-card {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 30px 65px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .basket-card-img-box {
+        width: 33.33333333%;
+
+        .basket-card-img {
+            width: 165px;
+            box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, .24);
+            padding: 0;
+            border-radius: 15px;
+            max-width: 100%;
+        }
+    }
+
+    .basket-card-text {
+        width: 66.66666667%;
+        padding-left: 18px;
+
+        .basket-card-header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .basket-card-title {
+                font-family: CocoSharp, Arial;
+                font-weight: 800;
+                font-size: 18px;
+                color: #000;
+                line-height: 30px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+#content {
+    background: radial-gradient(112.22% 112.22% at 75.1% -22.47%, #FFD689 0, #FFEDD4 100%);
+    .content-box {
+        margin-top: 30px;
+        padding: 15px 20px;
+
+        #txt{
+            // font-weight: 800;
+            font-size: 16px;
+            line-height: normal;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            color: #000;
+        }
+
+        #total-amount{
+            font-weight: 800;
+            font-size: 18px;
+            line-height: normal;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        #btn-submit, #btn-clear{
+            @extend .btn;
+            border: 1px solid transparent;
+        }
+    }
+}
