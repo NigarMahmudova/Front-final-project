@@ -37,7 +37,7 @@ for(let btn of buttons) {
         let id = this.parentElement.parentElement.parentElement.parentElement.id;
         let src = this.parentElement.parentElement.parentElement.children[0].src;
         let cardName = this.parentElement.parentElement.children[0].innerHTML;
-        let cardPrice = this.parentElement.parentElement.children[2].innerHTML;
+        let cardPrice = this.parentElement.parentElement.children[2].children[0].innerHTML;
         
         let card_list = JSON.parse(localStorage.getItem('cards'));
 
@@ -64,7 +64,7 @@ for(let btn of buttons) {
     }
 }
 
-function ShowCount(){
+ function ShowCount(){
     let card_list = JSON.parse(localStorage.getItem('cards'));
     document.querySelector('#count').innerHTML = card_list.length;
 }

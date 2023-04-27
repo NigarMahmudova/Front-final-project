@@ -1,14 +1,18 @@
-let card_list = JSON.parse(localStorage.getItem('cards'));
 
-if (card_list.length > 0) {
-    document.querySelector('.empty-basket').classList.add('d-none');
-    document.querySelector('#content').classList.remove('d-none');
 
-} else {
-    document.querySelector('.empty-basket').classList.remove('d-none');
-    document.querySelector('#content').classList.remove('d-none');
-
+var checkCount = function () {
+    let card_list = JSON.parse(localStorage.getItem('cards'));
+    if (card_list.length > 0) {
+        document.querySelector('.empty-basket').classList.add('d-none');
+        document.querySelector('#content').classList.remove('d-none');
+    
+    } else {
+        document.querySelector('#content').classList.add('d-none');
+        document.querySelector('.empty-basket').classList.remove('d-none');
+    }
 }
+checkCount();
+
 
 function getCards() {
     let card_list = JSON.parse(localStorage.getItem('cards'));
@@ -52,6 +56,11 @@ function getCards() {
 }
 getCards();
 
+document.querySelector('#btn-clear').addEventListener('click', function () {
+    localStorage.removeItem('cards');
+    location.reload();
+})
+
 var Delete = function(x){
     let card_list = JSON.parse(localStorage.getItem('cards'));
     let wanted = x.previousElementSibling.innerHTML;
@@ -60,7 +69,9 @@ var Delete = function(x){
         return obj.Id != exist_prod.Id;
     });
     localStorage.setItem('cards',JSON.stringify(filtered_list));
-    getCards()
+    getCards();
+    ShowCount();
+    checkCount();
 }
 
 
@@ -93,6 +104,8 @@ var Minus = function(x){
     }
     }
     getCards()
+    ShowCount();
+    checkCount();
 }
 
 
