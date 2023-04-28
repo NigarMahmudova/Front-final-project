@@ -42,3 +42,20 @@
 //         // instead of a settings object
 //     ]
 // });
+
+
+
+//Mobile js
+
+let hamburger = document.querySelector('.hamburger');
+let mobile_content = document.querySelector('#js-mobile');
+
+hamburger.onclick = function () {
+
+    // mobile_content.classList.toggle('active');
+    if (!mobile_content.classList.contains('active')) {
+        mobile_content.classList.add('active')
+    } else {
+        mobile_content.classList.remove('active')
+    }
+}

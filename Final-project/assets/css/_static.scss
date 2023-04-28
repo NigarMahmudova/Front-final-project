@@ -154,6 +154,14 @@
     }
 }
 
+.mobile-header {
+    display: none;
+}
+
+.active {
+    display: block !important;
+}
+
 .nav-menu {
     .nav-menu-left {
         float: left;

@@ -131,6 +131,7 @@
         background: #fafafa;
         border-radius: 10px;
         align-items: center;
+        display: flex;
 
         .ucard {
             width: 45%;
@@ -184,7 +185,7 @@
             }
 
             .ucard-extras {
-                .btn {
+                .btn-extra {
                     display: inline-block;
                     padding: 14px 30px;
                     font-size: 14px;
