@@ -18,16 +18,136 @@
 <body>
     <!-- Header section start -->
     <header>
-        <div class="wrapper">
-            <div class="container">
-                <div class="header-top">
-                    <div class="top-left">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="../assets/images/logonew-orange1.png" alt="logo">
-                            </a>
+        <div class="header">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="top-left">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="../assets/images/logonew-orange1.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="top-menu">
+                                <a class="top-menu-link" href="locations.html"> Xidmət şəbəkəsi </a>
+                                <a class="top-menu-link" href="#"> Bank haqqında </a>
+                                <a class="top-menu-link" href="#"> Keşbek </a>
+                                <a class="top-menu-link" href="#"> Tariflər </a>
+                                <a class="top-menu-link" href="#"> İnsan Resursları </a>
+                                <a class="top-menu-link" href="#"> Bankla əlaqə və təkliflər </a>
+                            </div>
                         </div>
-                        <div class="top-menu">
+
+                        <div class="top-right d-flex">
+                            <div class="top-options">
+                                <a class="top-option option-active" href="#"> Fərdi </a>
+                                <a class="top-option" href="#"> Biznes </a>
+                            </div>
+                            <div class="top-mode js-mode ">
+                                <a href="#">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
+                                        height="16" fill="white">
+                                        <path
+                                            d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="top-langs">
+                                <a href="#" class="lang-eng"> eng </a>
+                                <a href="#" class="lang-rus"> rus </a>
+                            </div>
+                            <div class="top-basket">
+                                <a href="basket.html">
+                                    <i class="fa-solid fa-basket-shopping">
+                                        <span id="count">0</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="top-search">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="nav-menu d-flex justify-content-between align-items-center">
+                    <div class="nav-menu-left">
+                        <a class="menu-link menu-link-first" target="_self" href="cards.html">Kartlar</a>
+                        <a class="menu-link " target="_self" href="#">Kreditlər</a>
+                        <a class="menu-link " target="_self" href="#">Əmanətlər</a>
+                        <a class="menu-link " target="_self" href="#">Köçürmələr</a>
+                        <a class="menu-link " target="_self" href="#">Rəqəmsal bankçılıq</a>
+                        <a class="menu-link " target="_self" href="#">Əlavə xidmətlər</a>
+                    </div>
+
+                    <div class="nav-menu-right">
+                        <a class="nav-tel" href=" tel:117">
+                            <i class="fa-solid fa-phone phone-icon"></i>
+                            <span style="line-height: 15px">117</span>
+                        </a>
+                        <a id="ibankingbtn" class="ibanking" target="_blank" href="#">
+                            <i class="fa-solid fa-circle-arrow-right ibanking-icon"></i>
+                            <span style="line-height: 15px"> İnternet bankçılıq</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-header" style="position: relative; z-index: 123;">
+            <div class="container">
+                <div class="mb-header-wrapper  light">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+
+                    <div class="mb-header-logo">
+                        <img src="../assets/images/logonew-orange1.png" alt="logo">
+                    </div>
+
+                    <div class="mb-header-right">
+                        <a class="nav-tel" href=" tel:117">
+                            <i class="fa-solid fa-phone phone-icon"></i>
+                            <span style="line-height: 15px">117</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="js-mobile" class="mobile-menu pos-fixed passive">
+        <div class="mobile-menu-wrapper">
+            <div class="mb-menu">
+                <div class="container">
+                    <div class="mb-menu-wrapper ">
+
+                        <div class="mb-menu-options">
+                            <a class="mb-menu-option option-active" href="#"> Fərdi </a>
+                            <a class="mb-menu-option" href="#"> Biznes </a>
+                        </div>
+
+                        <div class="mb-menu-menus">
+                            <a class="menu-link menu-link-first" target="_self" href="cards.html">Kartlar</a>
+                            <a class="menu-link " target="_self" href="#">Kreditlər</a>
+                            <a class="menu-link " target="_self" href="#">Əmanətlər</a>
+                            <a class="menu-link " target="_self" href="#">Köçürmələr</a>
+                            <a class="menu-link " target="_self" href="#">Rəqəmsal bankçılıq</a>
+                            <a class="menu-link " target="_self" href="#">Əlavə xidmətlər</a>
+                        </div>
+
+                        <div class="mb-menu-second-menus">
                             <a class="top-menu-link" href="#"> Xidmət şəbəkəsi </a>
                             <a class="top-menu-link" href="#"> Bank haqqında </a>
                             <a class="top-menu-link" href="#"> Keşbek </a>
@@ -35,71 +155,43 @@
                             <a class="top-menu-link" href="#"> İnsan Resursları </a>
                             <a class="top-menu-link" href="#"> Bankla əlaqə və təkliflər </a>
                         </div>
-                    </div>
 
-                    <div class="top-right d-flex">
-                        <div class="top-options">
-                            <a class="top-option option-active" href="#"> Fərdi </a>
-                            <a class="top-option" href="#"> Biznes </a>
-                        </div>
-                        <div class="top-mode js-mode ">
-                            <a href="#">
-                                <?xml version="1.0" encoding="UTF-8"?>
-                                <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                                    style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
-                                    height="16" fill="white">
-                                    <path
-                                        d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="top-langs">
-                            <a href="#" class="lang-eng"> eng </a>
-                            <a href="#" class="lang-rus"> rus </a>
-                        </div>
-                        <div class="top-basket">
-                            <a href="basket.html">
-                                <i class="fa-solid fa-basket-shopping">
-                                    <span id="count">0</span>
-                                </i>
-                            </a>
-                        </div>
-                        <div class="top-search">
-                            <a href="#">
-                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                            </a>
+                        <div class="mb-menu-footer d-flex">
+                            <div class="top-mode js-mode ">
+                                <a href="#">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
+                                        height="16" fill="white">
+                                        <path
+                                            d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="top-search">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </a>
+                            </div>
+                            <div class="top-basket">
+                                <a href="basket.html">
+                                    <i class="fa-solid fa-basket-shopping">
+                                        <span id="count">0</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="top-langs">
+                                <a href="#" class="lang-eng"> eng </a>
+                                <a href="#" class="lang-rus"> rus </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="nav-menu d-flex justify-content-between align-items-center">
-                <div class="nav-menu-left">
-                    <a class="menu-link menu-link-first" target="_self" href="cards.html">Kartlar</a>
-                    <a class="menu-link " target="_self" href="#">Kreditlər</a>
-                    <a class="menu-link " target="_self" href="#">Əmanətlər</a>
-                    <a class="menu-link " target="_self" href="#">Köçürmələr</a>
-                    <a class="menu-link " target="_self" href="#">Rəqəmsal bankçılıq</a>
-                    <a class="menu-link " target="_self" href="#">Əlavə xidmətlər</a>
-                </div>
-
-                <div class="nav-menu-right">
-                    <a class="nav-tel" href=" tel:117">
-                        <i class="fa-solid fa-phone phone-icon"></i>
-                        <span style="line-height: 15px">117</span>
-                    </a>
-                    <a id="ibankingbtn" class="ibanking" target="_blank" href="#">
-                        <i class="fa-solid fa-circle-arrow-right ibanking-icon"></i>
-                        <span style="line-height: 15px"> İnternet bankçılıq</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    </div>
     <!-- Header section end -->
 
     <!-- Main section start -->
@@ -271,6 +363,27 @@
         </div>
     </footer>
     <!-- Footer section end -->
+
+    <div id="js-search" class="search-content passive">
+        <div class="search-content-wrapper">
+            <div class="search-content-body">
+                <div class="search-content-body-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <p class="search-content-text">Axtarış</p>
+                <div class="search-content-field">
+                    <form>
+                        <input type="text" placeholder="Axtarış sözünü daxil edin" class="inp">
+                        <button class="field-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="search-content-footer">
+            </div>
+        </div>
+    </div>
 
     <script src="../assets/js/jquery.js"></script>
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->

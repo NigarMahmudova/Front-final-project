@@ -51,11 +51,23 @@ let hamburger = document.querySelector('.hamburger');
 let mobile_content = document.querySelector('#js-mobile');
 
 hamburger.onclick = function () {
+    mobile_content.classList.toggle('active');
+    document.body.classList.toggle('body-noscroll')
+}
 
-    // mobile_content.classList.toggle('active');
-    if (!mobile_content.classList.contains('active')) {
-        mobile_content.classList.add('active')
-    } else {
-        mobile_content.classList.remove('active')
-    }
+
+//Search
+let search = document.querySelector('.top-search');
+let search_content = document.querySelector('#js-search');
+
+
+search.onclick = function () {
+    search_content.classList.toggle('active');
+    document.body.classList.toggle('body-noscroll')
+}
+
+let close = document.querySelector('#js-search .search-content-body-close');
+
+close.onclick = function () {
+    search_content.classList.remove('active');
 }

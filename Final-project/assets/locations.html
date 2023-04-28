@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header section start -->
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="header-top">
+                        <div class="top-left">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="../assets/images/logonew-orange1.png" alt="logo">
+                                </a>
+                            </div>
+                            <div class="top-menu">
+                                <a class="top-menu-link" href="locations.html"> Xidmət şəbəkəsi </a>
+                                <a class="top-menu-link" href="#"> Bank haqqında </a>
+                                <a class="top-menu-link" href="#"> Keşbek </a>
+                                <a class="top-menu-link" href="#"> Tariflər </a>
+                                <a class="top-menu-link" href="#"> İnsan Resursları </a>
+                                <a class="top-menu-link" href="#"> Bankla əlaqə və təkliflər </a>
+                            </div>
+                        </div>
+
+                        <div class="top-right d-flex">
+                            <div class="top-options">
+                                <a class="top-option option-active" href="#"> Fərdi </a>
+                                <a class="top-option" href="#"> Biznes </a>
+                            </div>
+                            <div class="top-mode js-mode ">
+                                <a href="#">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
+                                        height="16" fill="white">
+                                        <path
+                                            d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="top-langs">
+                                <a href="#" class="lang-eng"> eng </a>
+                                <a href="#" class="lang-rus"> rus </a>
+                            </div>
+                            <div class="top-basket">
+                                <a href="basket.html">
+                                    <i class="fa-solid fa-basket-shopping">
+                                        <span id="count">0</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="top-search">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="nav-menu d-flex justify-content-between align-items-center">
+                    <div class="nav-menu-left">
+                        <a class="menu-link menu-link-first" target="_self" href="cards.html">Kartlar</a>
+                        <a class="menu-link " target="_self" href="#">Kreditlər</a>
+                        <a class="menu-link " target="_self" href="#">Əmanətlər</a>
+                        <a class="menu-link " target="_self" href="#">Köçürmələr</a>
+                        <a class="menu-link " target="_self" href="#">Rəqəmsal bankçılıq</a>
+                        <a class="menu-link " target="_self" href="#">Əlavə xidmətlər</a>
+                    </div>
+
+                    <div class="nav-menu-right">
+                        <a class="nav-tel" href=" tel:117">
+                            <i class="fa-solid fa-phone phone-icon"></i>
+                            <span style="line-height: 15px">117</span>
+                        </a>
+                        <a id="ibankingbtn" class="ibanking" target="_blank" href="#">
+                            <i class="fa-solid fa-circle-arrow-right ibanking-icon"></i>
+                            <span style="line-height: 15px"> İnternet bankçılıq</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-header" style="position: relative; z-index: 123;">
+            <div class="container">
+                <div class="mb-header-wrapper  light">
+                    <div class="hamburger">
+                        <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </div>
+
+                    <div class="mb-header-logo">
+                        <img src="../assets/images/logonew-orange1.png" alt="logo">
+                    </div>
+
+                    <div class="mb-header-right">
+                        <a class="nav-tel" href=" tel:117">
+                            <i class="fa-solid fa-phone phone-icon"></i>
+                            <span style="line-height: 15px">117</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="js-mobile" class="mobile-menu pos-fixed passive">
+        <div class="mobile-menu-wrapper">
+            <div class="mb-menu">
+                <div class="container">
+                    <div class="mb-menu-wrapper ">
+
+                        <div class="mb-menu-options">
+                            <a class="mb-menu-option option-active" href="#"> Fərdi </a>
+                            <a class="mb-menu-option" href="#"> Biznes </a>
+                        </div>
+
+                        <div class="mb-menu-menus">
+                            <a class="menu-link menu-link-first" target="_self" href="cards.html">Kartlar</a>
+                            <a class="menu-link " target="_self" href="#">Kreditlər</a>
+                            <a class="menu-link " target="_self" href="#">Əmanətlər</a>
+                            <a class="menu-link " target="_self" href="#">Köçürmələr</a>
+                            <a class="menu-link " target="_self" href="#">Rəqəmsal bankçılıq</a>
+                            <a class="menu-link " target="_self" href="#">Əlavə xidmətlər</a>
+                        </div>
+
+                        <div class="mb-menu-second-menus">
+                            <a class="top-menu-link" href="#"> Xidmət şəbəkəsi </a>
+                            <a class="top-menu-link" href="#"> Bank haqqında </a>
+                            <a class="top-menu-link" href="#"> Keşbek </a>
+                            <a class="top-menu-link" href="#"> Tariflər </a>
+                            <a class="top-menu-link" href="#"> İnsan Resursları </a>
+                            <a class="top-menu-link" href="#"> Bankla əlaqə və təkliflər </a>
+                        </div>
+
+                        <div class="mb-menu-footer d-flex">
+                            <div class="top-mode js-mode ">
+                                <a href="#">
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
+                                        height="16" fill="white">
+                                        <path
+                                            d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="top-search">
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </a>
+                            </div>
+                            <div class="top-basket">
+                                <a href="basket.html">
+                                    <i class="fa-solid fa-basket-shopping">
+                                        <span id="count">0</span>
+                                    </i>
+                                </a>
+                            </div>
+                            <div class="top-langs">
+                                <a href="#" class="lang-eng"> eng </a>
+                                <a href="#" class="lang-rus"> rus </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header section end -->
+
+    <!-- Main section start -->
+    <main>
+        <section>
+            <div class="locations">
+                <div class="locations-wrapper">
+                    <div class="container">
+                        <div class="loc-header">
+                            <h1>Xidmət şəbəkəsi</h1>
+                            <div class="locations-links">
+                                <a class="locations-item loc-active" data-id="0" href="#">
+                                    Bütün filiallar </a>
+                                <a class="locations-item" data-id="1" href="#">
+                                    Şənbə filialları </a>
+                                <a class="locations-item" data-id="2" href="#">
+                                    Biznes filiallar </a>
+                                <a class="locations-item" data-id="3" href="#">
+                                    UTM </a>
+                                <a class="locations-item" data-id="4" href="#">
+                                    Terminallar </a>
+                            </div>
+                        </div>
+
+
+                        <div class="locations-map">
+                            <div class="locations-map-wrapper">
+                                <div style="width: 100%"><iframe width="100%" height="400px" frameborder="0"
+                                        scrolling="no" marginheight="0" marginwidth="0"
+                                        src="https://maps.google.com/maps?width=100%25&amp;height=400px&amp;hl=en&amp;q=%20Bak%C4%B1%20%C5%9F.,%20R.Behbudov%20k%C3%BC%C3%A7.%2055,%20AZ1014%20+(Unibank)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                            href="https://www.gps.ie/sport-gps/">swimming watch</a></iframe></div>
+                            </div>
+                        </div>
+
+
+                        <div class="locations-contents">
+                            <div class="locations-content" id="0">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Mərkəzi ofis </p>
+                                            <div class="address"> Bakı ş., R.Behbudov küç. 55, AZ1014 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar: fəaliyyət
+                                                göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri. VİP-bankçılıq.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="locations-content d-none" id="1">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Rəqəmsal filial </p>
+                                            <div class="address"> S.S.Axundov küç., 42 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br> Şənbə: 10:00 –15:00 <br> Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki şəxslər üçün bank xidmətləri.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Rəqəmsal filial </p>
+                                            <div class="address"> S.S.Axundov küç., 42 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br> Şənbə: 10:00 –15:00 <br> Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki şəxslər üçün bank xidmətləri.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Rəqəmsal filial </p>
+                                            <div class="address"> S.S.Axundov küç., 42 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br> Şənbə: 10:00 –15:00 <br> Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki şəxslər üçün bank xidmətləri.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="locations-content d-none" id="2">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Tovuz filialı </p>
+                                            <div class="address"> Tovuz ş., Sabir küç., 21 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Tovuz filialı </p>
+                                            <div class="address"> Tovuz ş., Sabir küç., 21 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Tovuz filialı </p>
+                                            <div class="address"> Tovuz ş., Sabir küç., 21 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Tovuz filialı </p>
+                                            <div class="address"> Tovuz ş., Sabir küç., 21 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> Tovuz filialı </p>
+                                            <div class="address"> Tovuz ş., Sabir küç., 21 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time">
+                                                Bazar ertəsi - Cümə 9:00 – 18:00*<br>Şənbə/Bazar:
+                                                fəaliyyət göstərmir. </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            Fiziki və hüquqi şəxslər üçün bank xidmətləri
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="locations-content d-none" id="3">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> "Bolmart" (9-cu mikrorayon) </p>
+                                            <div class="address"> Bakı, Mir Cəlal küç. 103 </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <!-- <i class="fa-regular fa-clock clock-icon"></i> -->
+                                            <div class="time"> </div>
+                                        </div>
+                                        <div class="locations-extra">
+                                            <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div>
+                                            (AZN, USD)
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="locations-content d-none" id="4">
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> 17 saylı (Sahil) filialı </p>
+                                            <div class="address">
+                                                Bülbül pr., 10 , (Sahil metrosunun yanı)
+                                                Bakı ş., Səbail r-nu, AZ 1022
+                                                Tel.: 117 </div>
+                                        </div>
+                                        <!-- <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time"> </div>
+                                        </div> -->
+                                        <div class="locations-extra">
+                                            <!-- <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> 17 saylı (Sahil) filialı </p>
+                                            <div class="address">
+                                                Bülbül pr., 10 , (Sahil metrosunun yanı)
+                                                Bakı ş., Səbail r-nu, AZ 1022
+                                                Tel.: 117 </div>
+                                        </div>
+                                        <!-- <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time"> </div>
+                                        </div> -->
+                                        <div class="locations-extra">
+                                            <!-- <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> 17 saylı (Sahil) filialı </p>
+                                            <div class="address">
+                                                Bülbül pr., 10 , (Sahil metrosunun yanı)
+                                                Bakı ş., Səbail r-nu, AZ 1022
+                                                Tel.: 117 </div>
+                                        </div>
+                                        <!-- <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time"> </div>
+                                        </div> -->
+                                        <div class="locations-extra">
+                                            <!-- <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="content-wrapper">
+                                    <div class="content">
+                                        <div class="locations-name">
+                                            <p class="title"> 17 saylı (Sahil) filialı </p>
+                                            <div class="address">
+                                                Bülbül pr., 10 , (Sahil metrosunun yanı)
+                                                Bakı ş., Səbail r-nu, AZ 1022
+                                                Tel.: 117 </div>
+                                        </div>
+                                        <!-- <div class="locations-extra">
+                                            <i class="fa-regular fa-clock clock-icon"></i>
+                                            <div class="time"> </div>
+                                        </div> -->
+                                        <div class="locations-extra">
+                                            <!-- <div class="info-box">
+                                                <i class="fa-solid fa-info"></i>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div id="warning" class="content-wrapper">
+                            <div class="last-content">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="text">
+                                    <p> Qeyd: 17:00-dan sonra kart və kredit üzrə xidmətlər göstərilir. <br></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main section end -->
+
+    <!-- Footer section start -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-menu d-flex justify-content-between">
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Kartlar</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Kartlar</a>
+                            <a class="child" target="_self" href="#">Debet kartlar</a>
+                            <a class="child" target="_self" href="#">Digər</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Kreditlər</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Nağd</a>
+                            <a class="child" target="_self" href="#">Mikro</a>
+                            <a class="child" target="_self" href="#">İpoteka</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Əmanətlər</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Müddətli</a>
+                            <a class="child" target="_self" href="#">Proqressiv</a>
+                            <a class="child" target="_self" href="#">Yığım</a>
+                            <a class="child" target="_self" href="#">Faizlər əvvəlcədən</a>
+                            <a class="child" target="_self" href="#">Topla</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Köçürmələr</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Ölkəxarici</a>
+                            <a class="child" target="_self" href="#">Ölkədaxili</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Rəqəmsal bankçılıq</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">UBank</a>
+                            <a class="child" target="_self" href="#">İnternet bankçılıq</a>
+                            <a class="child" target="_self" href="#">Şəxsi kabinet</a>
+                            <a class="child" target="_self" href="#">Unimiles şəxsi kabinet</a>
+                            <a class="child" target="_self" href="#">Onlayn kredit ödənişi</a>
+                            <a class="child" target="_self" href="#">Onlayn kredit müraciəti</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Əlavə xidmətlər</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Hesablaşma-kassa xidməti</a>
+                            <a class="child" target="_self" href="#">POS terminal / Smart kassa</a>
+                            <a class="child" target="_self" href="#">Depozit qutuları</a>
+                            <a class="child" target="_self" href="#">Onlayn ticarət (eCommerce)</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-menu-list">
+                        <a class="first" target="_self" href="#">Bank haqqında</a>
+                        <div class="footer-children">
+                            <a class="child" target="_self" href="#">Rəhbərlik</a>
+                            <a class="child" target="_self" href="#">Müxbir hesablar</a>
+                            <a class="child" target="_self" href="#">Təklif və Şikayətlər</a>
+                            <a class="child" target="_self" href="#">İnsan resursları</a>
+                            <a class="child" target="_self" href="#">Hesabatlar</a>
+                            <a class="child" target="_self" href="#">Digər sənədlər</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="https://itunes.apple.com/ru/app/unibank-mobile/id1073632425" class="footer-link">
+                        <i class="fa-brands fa-apple orange"></i> </a>
+                    <a href="https://play.google.com/store/apps/details?id=az.unibank.mbanking" class="footer-link">
+                        <i class="fa-solid fa-robot orange"></i> </a>
+                    <a href="https://www.facebook.com/unibank.az/" class="footer-link">
+                        <i class="fa-brands fa-facebook"></i> </a>
+                    <a href="https://twitter.com/unibank" class="footer-link">
+                        <i class="fa-brands fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/company/unibankazerbaijan/" class="footer-link">
+                        <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://www.youtube.com/c/UnibankAze" class="footer-link">
+                        <i class="fa-brands fa-youtube"></i> </a>
+                    <a href="https://www.instagram.com/unibank.az/" class="footer-link">
+                        <i class="fa-brands fa-instagram"></i> </a>
+                    <a href="https://t.me/UnibankAZ" class="footer-link">
+                        <i class="fa-brands fa-telegram"></i> </a>
+                </div>
+
+                <div class="footer-bottom d-flex justify-content-between">
+                    <div class="bottom-left">
+                        <div class="footer-text"> © 2023, Unibank - Sənin Bankın </div>
+                        <div class="footer-text diff-text"> Bütün hüquqlar qorunur. </div>
+                    </div>
+
+                    <div class="bottom-right">
+                        <a class="footer-partner" href="http://adif.az/" target="_blank">
+                            <img class="adif" src="https://unibank.az/assets/images/adif.png" alt=""> </a>
+                        <a class="footer-partner" href="https://www.e-gov.az/" target="_blank">
+                            <img class="ehp" src="../assets/images/pico_2x-removebg-preview.png" alt=""> </a>
+                        <a class="footer-partner" href="https://infobank.az/" target="_blank">
+                            <img data-cfstyle="height:45px" data-cfsrc="/assets/images/infobank.png?v4"
+                                alt="MALİYYƏ SAVADLILIĞI Portalı" style="height:45px"
+                                src="https://unibank.az/assets/images/infobank.png?v4">
+                        </a>
+                        <a class="footer-partner" href="https://bizimpullar.az/" target="_blank">
+                            <img data-cfstyle="height:45px" data-cfsrc="/assets/images/msp.png?v5"
+                                alt="MALİYYƏ SAVADLILIĞI Portalı" style="height:45px"
+                                src="https://unibank.az/assets/images/msp.png?v5">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <div id="js-search" class="search-content passive">
+        <div class="search-content-wrapper">
+            <div class="search-content-body">
+                <div class="search-content-body-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <p class="search-content-text">Axtarış</p>
+                <div class="search-content-field">
+                    <form>
+                        <input type="text" placeholder="Axtarış sözünü daxil edin" class="inp">
+                        <button class="field-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="search-content-footer">
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="../assets/js/locations.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
