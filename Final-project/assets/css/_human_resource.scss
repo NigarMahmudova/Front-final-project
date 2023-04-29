@@ -1,0 +1,231 @@
+.hr-content {
+    .video {
+        position: relative;
+
+        .video-wrapper {
+            border-radius: 10px !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 250px;
+            width: 100%;
+
+            #player {
+                cursor: pointer;
+
+                .play-icon {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    i {
+                        font-size: 65px;
+                        line-height: 65px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .hr-items {
+        padding-top: 35px;
+        margin-bottom: 30px;
+
+        .hr-item {
+            height: 394px;
+            // margin-bottom: 30px;
+            background: #FAFAFA;
+            border-radius: 10px;
+            padding: 45px 50px;
+            text-align: center;
+            position: relative;
+            transition: all .2s linear;
+
+            &:hover{
+                background-color: #FF6400;
+                .hr-item-header{
+                    color: #fff;
+                }
+
+                .hr-item-desc{
+                    color: #fff;
+                }
+            }
+
+            .icon{
+                img{
+                    border-radius: 45%;
+                }
+            }
+
+            .hr-item-header {
+                font-family: CocoSharp, Arial;
+                font-weight: 700;
+                font-size: 20px;
+                color: #000;
+                line-height: normal;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+
+            .hr-item-desc {
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(0, 0, 0, .8);
+                line-height: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .ceos {
+        display: flex;
+        justify-content: space-between;
+
+        .ceos-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 45px 65px;
+            border-radius: 10px;
+            background-color: #fafafa;
+            height: 444px;
+            // margin-bottom: 0;
+
+            .ceos-img {
+                width: 105px;
+                height: 105px;
+                border-radius: 10px;
+                overflow: hidden;
+                margin-bottom: 15px;
+
+                img {
+                    width: 106px;
+                    height: 106px;
+                    border-radius: 50%;
+                }
+            }
+
+            .ceo-name {
+                font-family: CocoSharp, Arial;
+                font-weight: 700;
+                font-size: 20px;
+                color: #000;
+                line-height: normal;
+                margin-bottom: 5px;
+            }
+
+            .ceo-position {
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(0, 0, 0, .5);
+                line-height: normal;
+            }
+
+            .ceo-desc {
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 14px;
+                color: #000;
+                line-height: 1.43;
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .about {
+        margin-top: 30px;
+        background: #FAFAFA;
+        border-radius: 10px;
+        position: relative;
+
+        .about-wrapper {
+            padding: 45px 65px;
+
+            .about-header {
+                .title {
+                    font-family: CocoSharp, Arial;
+                    font-size: 32px;
+                    line-height: 32px;
+                    font-weight: 800;
+                    color: #FF6400 !important;
+                }
+            }
+
+            .about-desc {
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 14px;
+                color: #000;
+                margin-top: 15px;
+                line-height: 1.43;
+            }
+        }
+    }
+
+    .benefits {
+        padding-top: 30px;
+
+        .benefits-wrapper {
+            text-align: center;
+
+            .benefits-item {
+                padding: 35px 45px;
+                height: 200px;
+                border-radius: 10px;
+                background: #FF6400;
+
+                i {
+                    color: #fff;
+                    font-size: 52px;
+                    line-height: 52px;
+                    margin-bottom: 15px;
+                }
+
+                .benefits-caption {
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 1.43;
+                }
+            }
+        }
+    }
+
+    .opportunities {
+        margin-top: 50px;
+
+        .header {
+            margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 800;
+            color: #FF6400;
+        }
+
+        .opp-box {
+            .opp-header {
+                line-height: 20px;
+                font-family: CocoSharp, Arial;
+                font-weight: 700;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .opp-desc {
+                font-family: CocoSharp, Arial;
+                font-weight: 400;
+                font-size: 14px;
+                color: #000;
+                line-height: 23px;
+            }
+        }
+    }
+}

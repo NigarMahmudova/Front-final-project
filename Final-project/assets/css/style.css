@@ -1014,6 +1014,197 @@ body {
   margin: 0;
 }
 
+.hr-content .video {
+  position: relative;
+}
+.hr-content .video .video-wrapper {
+  border-radius: 10px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+.hr-content .video .video-wrapper #player {
+  cursor: pointer;
+}
+.hr-content .video .video-wrapper #player .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hr-content .video .video-wrapper #player .play-icon i {
+  font-size: 65px;
+  line-height: 65px;
+  color: #fff;
+}
+.hr-content .hr-items {
+  padding-top: 35px;
+  margin-bottom: 30px;
+}
+.hr-content .hr-items .hr-item {
+  height: 394px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  padding: 45px 50px;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s linear;
+}
+.hr-content .hr-items .hr-item:hover {
+  background-color: #FF6400;
+}
+.hr-content .hr-items .hr-item:hover .hr-item-header {
+  color: #fff;
+}
+.hr-content .hr-items .hr-item:hover .hr-item-desc {
+  color: #fff;
+}
+.hr-content .hr-items .hr-item .icon img {
+  border-radius: 45%;
+}
+.hr-content .hr-items .hr-item .hr-item-header {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.hr-content .hr-items .hr-item .hr-item-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.hr-content .ceos {
+  display: flex;
+  justify-content: space-between;
+}
+.hr-content .ceos .ceos-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 45px 65px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  height: 444px;
+}
+.hr-content .ceos .ceos-item .ceos-img {
+  width: 105px;
+  height: 105px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.hr-content .ceos .ceos-item .ceos-img img {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+}
+.hr-content .ceos .ceos-item .ceo-name {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.hr-content .ceos .ceos-item .ceo-position {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: normal;
+}
+.hr-content .ceos .ceos-item .ceo-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.43;
+  margin-top: 15px;
+}
+.hr-content .about {
+  margin-top: 30px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  position: relative;
+}
+.hr-content .about .about-wrapper {
+  padding: 45px 65px;
+}
+.hr-content .about .about-wrapper .about-header .title {
+  font-family: CocoSharp, Arial;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #FF6400 !important;
+}
+.hr-content .about .about-wrapper .about-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  margin-top: 15px;
+  line-height: 1.43;
+}
+.hr-content .benefits {
+  padding-top: 30px;
+}
+.hr-content .benefits .benefits-wrapper {
+  text-align: center;
+}
+.hr-content .benefits .benefits-wrapper .benefits-item {
+  padding: 35px 45px;
+  height: 200px;
+  border-radius: 10px;
+  background: #FF6400;
+}
+.hr-content .benefits .benefits-wrapper .benefits-item i {
+  color: #fff;
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 15px;
+}
+.hr-content .benefits .benefits-wrapper .benefits-item .benefits-caption {
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.43;
+}
+.hr-content .opportunities {
+  margin-top: 50px;
+}
+.hr-content .opportunities .header {
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 800;
+  color: #FF6400;
+}
+.hr-content .opportunities .opp-box .opp-header {
+  line-height: 20px;
+  font-family: CocoSharp, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.hr-content .opportunities .opp-box .opp-desc {
+  font-family: CocoSharp, Arial;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  line-height: 23px;
+}
+
 @media (max-width: 576px) {
   .header {
     display: none;
