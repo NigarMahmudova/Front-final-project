@@ -6,7 +6,7 @@
 
 .type-active {
     float: right;
-    border: 1px solid #ff9500;
+    border: 1px solid #ff9500 !important;
     width: 249px;
     border-radius: 5px;
     padding: 20px 2px;
@@ -40,9 +40,9 @@
 }
 
 .value-btn-active {
-    border-bottom: 1px solid #fd9b00;
-    padding-bottom: 2px;
-    color: #000;
+    border-bottom: 1px solid #fd9b00 !important;
+    padding-bottom: 2px !important;
+    color: #000 !important;
 }
 
 .info-wrapper {

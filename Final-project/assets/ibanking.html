@@ -47,7 +47,8 @@
                                     </div>
                                     <div id="2" class="card-item d-none">
                                         <div class="card-img">
-                                            <img src="https://online.unibank.az/ibank/resources/imgs/icons/cards/slide-img-2.png">
+                                            <img
+                                                src="https://online.unibank.az/ibank/resources/imgs/icons/cards/slide-img-2.png">
                                         </div>
                                         <div class="card-info  ">
                                             <h4>Bir toxunuşla istənilən yerə köçürmə et!</h4>
@@ -59,8 +60,8 @@
                                     </div>
 
                                     <div id="tabmenu-dots">
-                                        <span onclick="currentSlide(1)" class="dot dot-active"></span><span
-                                            onclick="currentSlide(2)" class="dot"></span>
+                                        <span data-id="1" class="dot dot-active"></span>
+                                        <span data-id="2" class="dot"></span>
                                     </div>
                                 </div>
                             </div>
@@ -73,26 +74,30 @@
                                                 <a id="register" href="#"> Qeydiyyat </a>
                                             </h3>
                                         </div>
-                                        
+
                                         <div class="login-right-content d-flex justify-content-between">
                                             <div class="qr-code-wrapper">
                                                 <span id="qrCodeBox">
-                                                    <img id="qrCodeImg" class="qr-image" style="width: 185px; margin-top: 3px; margin-left: -17px;" src="https://online.unibank.az/ibank/qrCode?attr=e1c0db73bf">
+                                                    <img id="qrCodeImg" class="qr-image"
+                                                        style="width: 185px; margin-top: 3px; margin-left: -17px;"
+                                                        src="https://online.unibank.az/ibank/qrCode?attr=e1c0db73bf">
                                                 </span>
                                             </div>
                                             <div class="login-type-buttons" id="type-btns">
-                                                <a id="pincode" href="#">
-                                                    <div class="type-active">
+                                                <a id="pincode" class="type-item" href="#">
+                                                    <div class="type type-active">
                                                         <div class="type-inner">
-                                                            <img src="https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png">
-                                                            <span class="value-btn-active">FİN kod ilə</span>
+                                                            <img
+                                                                src="https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png">
+                                                            <span class=" value-btn value-btn-active">FİN kod ilə</span>
                                                         </div>
                                                     </div>
                                                 </a>
-                                                <a id="sign" href="#">
+                                                <a id="sign" class="type-item" href="#">
                                                     <div class="type">
                                                         <div class="type-inner">
-                                                            <img src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png">
+                                                            <img
+                                                                src="https://online.unibank.az/ibank/resources/imgs/icons/asan.png">
                                                             <span class="value-btn">Asan İmza </span>
                                                         </div>
                                                     </div>
@@ -101,25 +106,28 @@
                                         </div>
 
                                         <div class="info-wrapper">
-                                            <img class="info-icon-qr" src="https://online.unibank.az/ibank/resources/imgs/icons/login-info.png">
+                                            <img class="info-icon-qr"
+                                                src="https://online.unibank.az/ibank/resources/imgs/icons/login-info.png">
                                             QR kod ilə giriş üçün UBank-dan istifadə et
                                         </div>
 
                                         <div class="login-inputs">
                                             <div class="input">
-                                                <img src="https://online.unibank.az/ibank/resources/imgs/icons/account.png">
-                                                <input id="pin-code"
-                                                    type="text" name="pin-code" autocomplete="off"
+                                                <img
+                                                    src="https://online.unibank.az/ibank/resources/imgs/icons/account.png">
+                                                <input id="pin-code" type="text" name="pin-code" autocomplete="off"
                                                     class="input-for-design" maxlength="15">
-                                                <a href="#" class="infoScreen" rel="resources/imgs/icons/pinkod.jpg">
-                                                    <img src="https://online.unibank.az/ibank/resources/imgs/icons/login-info.png" class="info-icon">
+                                                <a href="#" class="infoScreen">
+                                                    <img src="https://online.unibank.az/ibank/resources/imgs/icons/login-info.png"
+                                                        class="info-icon">
                                                 </a>
                                                 <span class="highlight"></span>
                                                 <span class="bar"></span>
                                                 <label>Şəxsiyyət vəsiqəsinin FİN kodu</label>
                                             </div>
                                             <div class="input">
-                                                <img src="https://online.unibank.az/ibank/resources/imgs/icons/lock.png">
+                                                <img
+                                                    src="https://online.unibank.az/ibank/resources/imgs/icons/lock.png">
                                                 <input id="password" type="password" name="password"
                                                     class="input-design" maxlength="16">
                                                 <span class="highlight"></span>
@@ -132,7 +140,8 @@
                                                 <div class="input">
                                                     <input id="captcha" type="text" name="captcha" class="input-design"
                                                         maxlength="8">
-                                                    <img class="captcha" src="https://online.unibank.az/ibank/captcha?attr=3ab8a4dfe0">
+                                                    <img class="captcha"
+                                                        src="https://online.unibank.az/ibank/captcha?attr=3ab8a4dfe0">
                                                     <span class="highlight"></span>
                                                     <span class="bar"></span>
                                                     <label class="captcha-label">Kodu daxil edin</label>
@@ -157,6 +166,60 @@
         </section>
     </main>
 
+
+    <div class="modal-content passive">
+        <form id="forgotPasswordModal" class="forgot-modal">
+            <header class="modal-header">
+                <div class="modal-title ">Şifrənin bərpası</div>
+                <a id="close" href="#">
+                    <i class="fa-solid fa-x"></i>
+                </a>
+            </header>
+
+            <div class="forgot-modal-body">
+                <div class="forgot-modal-inputs">
+                    <div class="input">
+                        <img src="https://online.unibank.az/ibank/resources/imgs/icons/account.png">
+                        <input id="forgot-pincode" type="text"
+                            name="forgot-pincode" autocomplete="off" class="forgot-input" maxlength="16" required="">
+                        <span class="bar"></span>
+                        <label>Şəxsiyyət vəsiqəsinin FİN kodu</label>
+                    </div>
+                    <div class="input">
+                        <img src="https://online.unibank.az/ibank/resources/imgs/icons/login-mobile.png">
+                        <select id="option" name="option" class="country-codes" size="1">
+                            <option value="+994">+994  &nbsp; Azərbaycan</option>
+                            <option value="+1">+1  &nbsp; ABŞ</option>
+                            <option value="+355">+355  &nbsp; Albaniya</option>
+                            <option value="+49">+49  &nbsp; Almaniya</option>
+                            <option value="+684">+684  &nbsp; Amerikan Samoası</option>
+                            <option value="+376">+376  &nbsp; Andorra</option>
+                            <option value="+1264">+1264  &nbsp; Angilya</option>
+                            <option value="+244">+244  &nbsp; Anqola</option>
+                        </select>
+                        <input id="selection-prefix-phone" type="text" name="selection-prefix-phone"
+                            class="input-for-design" autocomplete="off" maxlength="14" required="">
+
+                        <span class="bar"></span>
+                        <label class="selected">Mobil nömrə</label>
+                        <span id="phoneDescription">
+                            <span class="small-desc">Mobil
+                                nömrənin düzgün formatı: +994 XX XXX XX XX</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="login-form-btn">Daxil ol
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="./js/ibanking.js"></script>
 
 </body>
 
