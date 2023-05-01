@@ -59,7 +59,7 @@ for(let btn of buttons) {
         document.querySelector('.alert-box').style.display = 'block';
         setTimeout(() => {
         document.querySelector('.alert-box').style.display = 'none';
-        }, 3000);
+        }, 1000);
         ShowCount();
     }
 }
