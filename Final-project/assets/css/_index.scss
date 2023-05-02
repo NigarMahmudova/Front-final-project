@@ -1,7 +1,7 @@
 // Slider section start
 .slider {
     max-height: 768px;
-    height: 450px;
+    // height: 450px;
     border-radius: 10px;
     margin-bottom: 20px;
 
@@ -62,6 +62,18 @@
                 }
             }
         }
+    }
+
+    .second-slide{
+        padding-top: 145px;
+    }
+
+    .third-slide{
+        padding-top: 17px;
+    }
+
+    .fourth-slide{
+        padding-top: 145px;
     }
 }
 

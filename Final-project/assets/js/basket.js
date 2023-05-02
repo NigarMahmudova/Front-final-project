@@ -65,9 +65,7 @@ var Delete = function(x){
     let card_list = JSON.parse(localStorage.getItem('cards'));
     let wanted = x.previousElementSibling.innerHTML;
     let exist_prod = card_list.find(pr => pr.Id === wanted);
-    let filtered_list = card_list.filter(function(obj){ 
-        return obj.Id != exist_prod.Id;
-    });
+    let filtered_list = card_list.filter(pr => pr.Id != exist_prod.Id);
     localStorage.setItem('cards',JSON.stringify(filtered_list));
     getCards();
     ShowCount();
@@ -87,9 +85,7 @@ var Minus = function(x){
             exist_prod.Count -=1;
             localStorage.setItem('cards',JSON.stringify(card_list));
         }else{
-        let filtered_list = card_list.filter(function(obj){ 
-            return obj.Id != exist_prod.Id; 
-        });
+        let filtered_list = card_list.filter(pr => pr.Id != exist_prod.Id);
         localStorage.setItem('cards',JSON.stringify(filtered_list));
             
     }

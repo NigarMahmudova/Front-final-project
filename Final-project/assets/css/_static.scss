@@ -77,6 +77,14 @@
                 border-radius: 5px;
                 margin-left: 10px;
                 box-shadow: 0 2px 14px -10px rgba(0, 0, 0, .3);
+
+            }
+
+            .mode-light {
+                background: #fff;
+            }
+
+            .mode-dark {
                 background-color: #323232;
             }
 
@@ -312,7 +320,7 @@
 
 // Footer section end
 
-.body-noscroll{
+.body-noscroll {
     overflow-y: hidden;
 }
 
@@ -388,4 +396,27 @@
             }
         }
     }
+}
+
+// Dark mode
+
+.dark-mode {
+    background-color: #000;
+}
+
+.dark-mode-card {
+    background-color: rgba(255, 255, 255, .1) !important;
+    color: #fff !important;
+}
+
+.dark-mode-text {
+    color: #fff !important;
+}
+
+.dark-mode-border {
+    border: 1px solid #969696 !important;
+}
+
+.dark-mode-inp {
+    background-color: #464646;
 }

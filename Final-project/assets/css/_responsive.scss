@@ -273,6 +273,45 @@
     //Slider
     .slider {
         margin-top: 16px;
+        overflow-x: hidden;
+
+        .banner-wrapper{
+            text-align: center;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .first-slide{
+                padding-top: 80px !important;
+            }
+
+            .banner-info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .banner-header{
+                    font-size: 22px;
+                    line-height: normal;
+                    margin-bottom: 10px;
+                    font-weight: 800;
+                }
+
+                .banner-desc{
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+
+                .banner-img{
+                    height: auto;
+                    width: 70% !important;
+                }
+            }
+        }
+
     }
 
     //Statistic section 
@@ -678,14 +717,29 @@
     .footer {
         padding: 0 !important;
 
-        .footer-menu,
-        .footer-bottom {
+        .footer-menu {
             display: none !important;
         }
 
         .footer-links {
             display: flex;
             justify-content: center;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 35px;
+            flex-direction: column-reverse;
+
+            .bottom-left {
+                float: none;
+                margin-top: 35px;
+                margin-bottom: 10px;
+            }
+
+            .bottom-right {
+                margin: 0 auto;
+            }
         }
     }
 
@@ -699,7 +753,7 @@
             line-height: normal;
         }
 
-        .ucard {
+        .ucard-card {
             padding: 30px 40px;
             text-align: center;
             margin-top: 0;
@@ -923,8 +977,172 @@
             }
         }
 
-        #warning{
+        #warning {
             padding: 20px 40px;
+        }
+    }
+
+    // Human resources
+    .hr-contents {
+        .hr-content {
+            .video {
+                .video-wrapper {
+                    height: 180px !important;
+                }
+            }
+
+            .hr-items {
+                height: auto;
+                width: 100%;
+                padding-top: 20px;
+                margin-bottom: 10px;
+
+                .hr-item {
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    padding: 15px 40px;
+
+                    .icon {
+                        img {
+                            width: 45px;
+                        }
+                    }
+
+                    .hr-item-body {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-left: 15px;
+
+                        .hr-item-header {
+                            line-height: 14px;
+                            font-family: CocoSharp, Arial;
+                            font-weight: 700;
+                            font-size: 14px;
+                            height: auto;
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                            text-align: left;
+                        }
+
+                        .hr-item-desc {
+                            line-height: 12px;
+                            font-family: CocoSharp, Arial;
+                            font-weight: 400;
+                            font-size: 12px;
+                            text-align: left;
+                            margin-bottom: 0;
+                            padding-right: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .ceos {
+                margin-top: 20px;
+
+                .ceos-item {
+                    height: auto;
+                }
+
+                .ceo-name {
+                    line-height: 14px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 14px;
+                    text-align: left;
+                }
+
+                .ceo-position {
+                    line-height: 10px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 400;
+                    font-size: 10px;
+                    text-align: left;
+                }
+
+                .ceo-desc {
+                    text-align: left;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: normal;
+                    margin-top: 6px;
+                }
+            }
+
+            .about {
+                .about-wrapper {
+                    padding: 25px 40px;
+
+                    .about-header {
+                        .title {
+                            font-size: 20px;
+                        }
+                    }
+
+                    .about-desc {
+                        font-family: CocoSharp, Arial;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .benefits {
+                .benefits-wrapper {
+                    .benefits-item {
+                        display: flex;
+                        align-items: center;
+                        height: auto;
+                        padding: 20px 40px;
+
+                        i {
+                            font-size: 34px;
+                            line-height: 34px;
+                            margin-bottom: 0;
+                            margin-right: 15px;
+                        }
+
+                        .benefits-caption {
+                            text-align: left;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+
+            .opportunities {
+                margin-top: 25px;
+
+                .opp-wrapper {
+                    margin-top: 25px;
+
+                    .opp-wrapper-header {
+                        font-size: 20px;
+                    }
+
+                    .opp-box {
+                        .opp-header {
+                            line-height: 14px;
+                            font-family: CocoSharp, Arial;
+                            font-weight: 700;
+                            font-size: 14px;
+                            margin-bottom: 5px;
+                        }
+
+                        .opp-desc {
+                            font-family: CocoSharp, Arial;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

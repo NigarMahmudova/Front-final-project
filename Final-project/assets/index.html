@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -43,16 +47,22 @@
                                 <a class="top-option option-active" href="#"> Fərdi </a>
                                 <a class="top-option" href="#"> Biznes </a>
                             </div>
-                            <div class="top-mode js-mode ">
+                            <div id="js-mode" class="top-mode mode-dark">
                                 <a href="#">
                                     <?xml version="1.0" encoding="UTF-8"?>
                                     <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
-                                        height="16" fill="white">
+                                    <svg class="moon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+                                        y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                        xml:space="preserve" width="16" height="16" fill="white">
                                         <path
                                             d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+
+                                    <svg class="sun d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="16px" height="16px">
+                                        <path
+                                            d="M 24.90625 3.96875 C 24.863281 3.976563 24.820313 3.988281 24.78125 4 C 24.316406 4.105469 23.988281 4.523438 24 5 L 24 11 C 23.996094 11.359375 24.183594 11.695313 24.496094 11.878906 C 24.808594 12.058594 25.191406 12.058594 25.503906 11.878906 C 25.816406 11.695313 26.003906 11.359375 26 11 L 26 5 C 26.011719 4.710938 25.894531 4.433594 25.6875 4.238281 C 25.476563 4.039063 25.191406 3.941406 24.90625 3.96875 Z M 10.65625 9.84375 C 10.28125 9.910156 9.980469 10.183594 9.875 10.546875 C 9.769531 10.914063 9.878906 11.304688 10.15625 11.5625 L 14.40625 15.8125 C 14.648438 16.109375 15.035156 16.246094 15.410156 16.160156 C 15.78125 16.074219 16.074219 15.78125 16.160156 15.410156 C 16.246094 15.035156 16.109375 14.648438 15.8125 14.40625 L 11.5625 10.15625 C 11.355469 9.933594 11.054688 9.820313 10.75 9.84375 C 10.71875 9.84375 10.6875 9.84375 10.65625 9.84375 Z M 39.03125 9.84375 C 38.804688 9.875 38.59375 9.988281 38.4375 10.15625 L 34.1875 14.40625 C 33.890625 14.648438 33.753906 15.035156 33.839844 15.410156 C 33.925781 15.78125 34.21875 16.074219 34.589844 16.160156 C 34.964844 16.246094 35.351563 16.109375 35.59375 15.8125 L 39.84375 11.5625 C 40.15625 11.265625 40.246094 10.800781 40.0625 10.410156 C 39.875 10.015625 39.460938 9.789063 39.03125 9.84375 Z M 24.90625 15 C 24.875 15.007813 24.84375 15.019531 24.8125 15.03125 C 24.75 15.035156 24.6875 15.046875 24.625 15.0625 C 24.613281 15.074219 24.605469 15.082031 24.59375 15.09375 C 19.289063 15.320313 15 19.640625 15 25 C 15 30.503906 19.496094 35 25 35 C 30.503906 35 35 30.503906 35 25 C 35 19.660156 30.746094 15.355469 25.46875 15.09375 C 25.433594 15.09375 25.410156 15.0625 25.375 15.0625 C 25.273438 15.023438 25.167969 15.003906 25.0625 15 C 25.042969 15 25.019531 15 25 15 C 24.96875 15 24.9375 15 24.90625 15 Z M 24.9375 17 C 24.957031 17 24.980469 17 25 17 C 25.03125 17 25.0625 17 25.09375 17 C 29.46875 17.050781 33 20.613281 33 25 C 33 29.421875 29.421875 33 25 33 C 20.582031 33 17 29.421875 17 25 C 17 20.601563 20.546875 17.035156 24.9375 17 Z M 4.71875 24 C 4.167969 24.078125 3.78125 24.589844 3.859375 25.140625 C 3.9375 25.691406 4.449219 26.078125 5 26 L 11 26 C 11.359375 26.003906 11.695313 25.816406 11.878906 25.503906 C 12.058594 25.191406 12.058594 24.808594 11.878906 24.496094 C 11.695313 24.183594 11.359375 23.996094 11 24 L 5 24 C 4.96875 24 4.9375 24 4.90625 24 C 4.875 24 4.84375 24 4.8125 24 C 4.78125 24 4.75 24 4.71875 24 Z M 38.71875 24 C 38.167969 24.078125 37.78125 24.589844 37.859375 25.140625 C 37.9375 25.691406 38.449219 26.078125 39 26 L 45 26 C 45.359375 26.003906 45.695313 25.816406 45.878906 25.503906 C 46.058594 25.191406 46.058594 24.808594 45.878906 24.496094 C 45.695313 24.183594 45.359375 23.996094 45 24 L 39 24 C 38.96875 24 38.9375 24 38.90625 24 C 38.875 24 38.84375 24 38.8125 24 C 38.78125 24 38.75 24 38.71875 24 Z M 15 33.875 C 14.773438 33.90625 14.5625 34.019531 14.40625 34.1875 L 10.15625 38.4375 C 9.859375 38.679688 9.722656 39.066406 9.808594 39.441406 C 9.894531 39.8125 10.1875 40.105469 10.558594 40.191406 C 10.933594 40.277344 11.320313 40.140625 11.5625 39.84375 L 15.8125 35.59375 C 16.109375 35.308594 16.199219 34.867188 16.039063 34.488281 C 15.882813 34.109375 15.503906 33.867188 15.09375 33.875 C 15.0625 33.875 15.03125 33.875 15 33.875 Z M 34.6875 33.875 C 34.3125 33.941406 34.011719 34.214844 33.90625 34.578125 C 33.800781 34.945313 33.910156 35.335938 34.1875 35.59375 L 38.4375 39.84375 C 38.679688 40.140625 39.066406 40.277344 39.441406 40.191406 C 39.8125 40.105469 40.105469 39.8125 40.191406 39.441406 C 40.277344 39.066406 40.140625 38.679688 39.84375 38.4375 L 35.59375 34.1875 C 35.40625 33.988281 35.148438 33.878906 34.875 33.875 C 34.84375 33.875 34.8125 33.875 34.78125 33.875 C 34.75 33.875 34.71875 33.875 34.6875 33.875 Z M 24.90625 37.96875 C 24.863281 37.976563 24.820313 37.988281 24.78125 38 C 24.316406 38.105469 23.988281 38.523438 24 39 L 24 45 C 23.996094 45.359375 24.183594 45.695313 24.496094 45.878906 C 24.808594 46.058594 25.191406 46.058594 25.503906 45.878906 C 25.816406 45.695313 26.003906 45.359375 26 45 L 26 39 C 26.011719 38.710938 25.894531 38.433594 25.6875 38.238281 C 25.476563 38.039063 25.191406 37.941406 24.90625 37.96875 Z" />
                                     </svg>
                                 </a>
                             </div>
@@ -159,16 +169,22 @@
                         </div>
 
                         <div class="mb-menu-footer d-flex">
-                            <div class="top-mode js-mode ">
+                            <div id="js-mode" class="top-mode mode-dark">
                                 <a href="#">
                                     <?xml version="1.0" encoding="UTF-8"?>
                                     <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"
-                                        style="enable-background:new 0 0 512 512;" xml:space="preserve" width="16"
-                                        height="16" fill="white">
+                                    <svg class="moon" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px"
+                                        y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                        xml:space="preserve" width="16" height="16" fill="white">
                                         <path
                                             d="M256.349,511.15C115.434,511.536,0.886,397.613,0.501,256.698S114.037,1.235,254.953,0.85  c43.566-0.119,86.436,10.919,124.528,32.062l33.021,18.328l-32.829,18.711c-96.889,55.013-130.835,178.154-75.822,275.043  c21.18,37.301,53.697,66.881,92.832,84.444l34.467,15.543l-31.192,21.263C357.74,495.411,307.661,511.071,256.349,511.15z   M256.349,43.373c-117.43,0-212.626,95.196-212.626,212.626s95.196,212.626,212.626,212.626c30.519,0.005,60.67-6.657,88.346-19.519  c-112.509-74.287-143.493-225.715-69.206-338.224c13.888-21.034,30.95-39.79,50.58-55.601  C303.681,47.355,280.099,43.327,256.349,43.373z M411.566,207.095l24.813,49.606l24.835-49.606l49.606-24.813l-49.606-24.835  l-24.813-49.606l-24.835,49.606l-49.584,24.813L411.566,207.095z M490.237,362.312c-11.743,0-21.263,9.52-21.263,21.263  s9.52,21.263,21.263,21.263s21.263-9.52,21.263-21.263S501.98,362.312,490.237,362.312z M362.662,277.262  c-11.743,0-21.263,9.52-21.263,21.263s9.52,21.263,21.263,21.263c11.743,0,21.263-9.52,21.263-21.263  S374.405,277.262,362.662,277.262z" />
+                                    </svg>
+
+                                    <svg class="sun d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"
+                                        width="16px" height="16px">
+                                        <path
+                                            d="M 24.90625 3.96875 C 24.863281 3.976563 24.820313 3.988281 24.78125 4 C 24.316406 4.105469 23.988281 4.523438 24 5 L 24 11 C 23.996094 11.359375 24.183594 11.695313 24.496094 11.878906 C 24.808594 12.058594 25.191406 12.058594 25.503906 11.878906 C 25.816406 11.695313 26.003906 11.359375 26 11 L 26 5 C 26.011719 4.710938 25.894531 4.433594 25.6875 4.238281 C 25.476563 4.039063 25.191406 3.941406 24.90625 3.96875 Z M 10.65625 9.84375 C 10.28125 9.910156 9.980469 10.183594 9.875 10.546875 C 9.769531 10.914063 9.878906 11.304688 10.15625 11.5625 L 14.40625 15.8125 C 14.648438 16.109375 15.035156 16.246094 15.410156 16.160156 C 15.78125 16.074219 16.074219 15.78125 16.160156 15.410156 C 16.246094 15.035156 16.109375 14.648438 15.8125 14.40625 L 11.5625 10.15625 C 11.355469 9.933594 11.054688 9.820313 10.75 9.84375 C 10.71875 9.84375 10.6875 9.84375 10.65625 9.84375 Z M 39.03125 9.84375 C 38.804688 9.875 38.59375 9.988281 38.4375 10.15625 L 34.1875 14.40625 C 33.890625 14.648438 33.753906 15.035156 33.839844 15.410156 C 33.925781 15.78125 34.21875 16.074219 34.589844 16.160156 C 34.964844 16.246094 35.351563 16.109375 35.59375 15.8125 L 39.84375 11.5625 C 40.15625 11.265625 40.246094 10.800781 40.0625 10.410156 C 39.875 10.015625 39.460938 9.789063 39.03125 9.84375 Z M 24.90625 15 C 24.875 15.007813 24.84375 15.019531 24.8125 15.03125 C 24.75 15.035156 24.6875 15.046875 24.625 15.0625 C 24.613281 15.074219 24.605469 15.082031 24.59375 15.09375 C 19.289063 15.320313 15 19.640625 15 25 C 15 30.503906 19.496094 35 25 35 C 30.503906 35 35 30.503906 35 25 C 35 19.660156 30.746094 15.355469 25.46875 15.09375 C 25.433594 15.09375 25.410156 15.0625 25.375 15.0625 C 25.273438 15.023438 25.167969 15.003906 25.0625 15 C 25.042969 15 25.019531 15 25 15 C 24.96875 15 24.9375 15 24.90625 15 Z M 24.9375 17 C 24.957031 17 24.980469 17 25 17 C 25.03125 17 25.0625 17 25.09375 17 C 29.46875 17.050781 33 20.613281 33 25 C 33 29.421875 29.421875 33 25 33 C 20.582031 33 17 29.421875 17 25 C 17 20.601563 20.546875 17.035156 24.9375 17 Z M 4.71875 24 C 4.167969 24.078125 3.78125 24.589844 3.859375 25.140625 C 3.9375 25.691406 4.449219 26.078125 5 26 L 11 26 C 11.359375 26.003906 11.695313 25.816406 11.878906 25.503906 C 12.058594 25.191406 12.058594 24.808594 11.878906 24.496094 C 11.695313 24.183594 11.359375 23.996094 11 24 L 5 24 C 4.96875 24 4.9375 24 4.90625 24 C 4.875 24 4.84375 24 4.8125 24 C 4.78125 24 4.75 24 4.71875 24 Z M 38.71875 24 C 38.167969 24.078125 37.78125 24.589844 37.859375 25.140625 C 37.9375 25.691406 38.449219 26.078125 39 26 L 45 26 C 45.359375 26.003906 45.695313 25.816406 45.878906 25.503906 C 46.058594 25.191406 46.058594 24.808594 45.878906 24.496094 C 45.695313 24.183594 45.359375 23.996094 45 24 L 39 24 C 38.96875 24 38.9375 24 38.90625 24 C 38.875 24 38.84375 24 38.8125 24 C 38.78125 24 38.75 24 38.71875 24 Z M 15 33.875 C 14.773438 33.90625 14.5625 34.019531 14.40625 34.1875 L 10.15625 38.4375 C 9.859375 38.679688 9.722656 39.066406 9.808594 39.441406 C 9.894531 39.8125 10.1875 40.105469 10.558594 40.191406 C 10.933594 40.277344 11.320313 40.140625 11.5625 39.84375 L 15.8125 35.59375 C 16.109375 35.308594 16.199219 34.867188 16.039063 34.488281 C 15.882813 34.109375 15.503906 33.867188 15.09375 33.875 C 15.0625 33.875 15.03125 33.875 15 33.875 Z M 34.6875 33.875 C 34.3125 33.941406 34.011719 34.214844 33.90625 34.578125 C 33.800781 34.945313 33.910156 35.335938 34.1875 35.59375 L 38.4375 39.84375 C 38.679688 40.140625 39.066406 40.277344 39.441406 40.191406 C 39.8125 40.105469 40.105469 39.8125 40.191406 39.441406 C 40.277344 39.066406 40.140625 38.679688 39.84375 38.4375 L 35.59375 34.1875 C 35.40625 33.988281 35.148438 33.878906 34.875 33.875 C 34.84375 33.875 34.8125 33.875 34.78125 33.875 C 34.75 33.875 34.71875 33.875 34.6875 33.875 Z M 24.90625 37.96875 C 24.863281 37.976563 24.820313 37.988281 24.78125 38 C 24.316406 38.105469 23.988281 38.523438 24 39 L 24 45 C 23.996094 45.359375 24.183594 45.695313 24.496094 45.878906 C 24.808594 46.058594 25.191406 46.058594 25.503906 45.878906 C 25.816406 45.695313 26.003906 45.359375 26 45 L 26 39 C 26.011719 38.710938 25.894531 38.433594 25.6875 38.238281 C 25.476563 38.039063 25.191406 37.941406 24.90625 37.96875 Z" />
                                     </svg>
                                 </a>
                             </div>
@@ -203,8 +219,8 @@
             <div class="container">
                 <div class="slider" style="background-color: #ff6b00">
                     <!-- First -->
-                    <div class="banner-wrapper d-flex align-items-center">
-                        <img class="banner-img" src="../assets/images/1681193995200-azn-dovriyye.png" style="right:px"
+                    <div class="banner-wrapper d-flex align-items-center first-slide">
+                        <img class="banner-img" src="../assets/images/1681193995200-azn-dovriyye.png"
                             alt="Ləğv olundu!">
 
                         <div class="banner-info">
@@ -218,9 +234,9 @@
                         </div>
                     </div>
                     <!-- Second -->
-                    <div class="banner-wrapper d-flex align-items-center d-none">
+                    <div class="banner-wrapper d-flex align-items-center second-slide">
                         <img class="banner-img" src="../assets/images/16708419491664282439Toplabanner.lastpng.png"
-                            style="right:px" alt="Topla">
+                            alt="Topla">
 
                         <div class="banner-info">
                             <div class="banner-header"> Topla </div>
@@ -233,8 +249,8 @@
                         </div>
                     </div>
                     <!-- Third -->
-                    <div class="banner-wrapper d-flex align-items-center d-none">
-                        <img class="banner-img" src="../assets/images/1673854081cover-ne.png" style="right:px"
+                    <div class="banner-wrapper d-flex align-items-center third-slide">
+                        <img class="banner-img" src="../assets/images/1673854081cover-ne.png"
                             alt="Sənin kartın, sənin “art”ın!">
 
                         <div class="banner-info">
@@ -248,9 +264,9 @@
                         </div>
                     </div>
                     <!-- Fourth -->
-                    <div class="banner-wrapper d-flex align-items-center d-none">
+                    <div class="banner-wrapper d-flex align-items-center fourth-slide">
                         <img class="banner-img" src="../assets/images/16703977791661845566digerbank.gif"
-                            style="right:px" alt="Kartdan karta - pulsuzdur!">
+                            alt="Kartdan karta - pulsuzdur!">
 
                         <div class="banner-info">
                             <div class="banner-header"> Kartdan karta - pulsuzdur! </div>
@@ -459,9 +475,9 @@
                                 <div class="col-lg-4 col-6">
                                     <div class="exchange-item">
                                         <div class="exc-item-header">
-                                            Nağd </div>
+                                            Nağdsız </div>
                                         <div class="exc-item-date">
-                                            Yeniləndi 28.04.2023 </div>
+                                            Yeniləndi 02.05.2023 </div>
                                         <div class="exc-item-body">
                                             <table>
                                                 <thead>
@@ -477,37 +493,37 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>USD</td>
-                                                        <td>1.6970
+                                                        <td>1.6900
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>1.7015
+                                                        <td>1.7025
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>EUR</td>
-                                                        <td>1.8404
+                                                        <td>1.8413
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>1.8979
+                                                        <td>1.9003
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>RUB</td>
-                                                        <td>0.0200
+                                                        <td>0.0203
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>0.0213
+                                                        <td>0.0219
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>GBP</td>
-                                                        <td>2.0905
+                                                        <td>2.0870
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>2.1584
+                                                        <td>2.1625
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
@@ -520,9 +536,9 @@
                                 <div class="col-lg-4 col-6">
                                     <div class="exchange-item">
                                         <div class="exc-item-header">
-                                            Nağd </div>
+                                            Kart </div>
                                         <div class="exc-item-date">
-                                            Yeniləndi 28.04.2023 </div>
+                                            Yeniləndi 02.05.2023 </div>
                                         <div class="exc-item-body">
                                             <table>
                                                 <thead>
@@ -538,37 +554,37 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>USD</td>
-                                                        <td>1.6970
+                                                        <td>1.6915
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>1.7015
+                                                        <td>1.7100
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>EUR</td>
-                                                        <td>1.8404
+                                                        <td>1.8487
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>1.8979
+                                                        <td>1.8861
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>RUB</td>
-                                                        <td>0.0200
+                                                        <td>0.0208
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>0.0213
+                                                        <td>0.0216
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>GBP</td>
-                                                        <td>2.0905
+                                                        <td>2.1040
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
-                                                        <td>2.1584
+                                                        <td>2.1466
                                                             <i class="fa-solid fa-angle-down"></i>
                                                         </td>
                                                     </tr>
@@ -589,7 +605,7 @@
                                                 Nağd məzənnə əsasında hesablanır </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-lg-4">
                                         <div class="exc-cnv-body">
                                             <div class="exc-calc d-flex align-items-center">
@@ -633,7 +649,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -1126,12 +1142,52 @@
     </div>
 
     <!-- <script src="../assets/js/jquery.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="../assets/js/cards.js"></script>
     <script src="../assets/js/app.js"></script>
+
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>
