@@ -77,6 +77,10 @@
                 line-height: 30px;
             }
 
+            .ucard-btn-desk{
+                display: none
+            }
+
             .button {
                 @extend .btn;
             }
@@ -91,27 +95,37 @@
             margin-bottom: 25px;
         }
 
-        .ucard-adv {
-            align-items: center;
-            justify-content: start;
-            width: calc(100%/3);
-            text-align: center;
+        .ucard-advs{
+            display: flex;
+            justify-content: space-between;
 
-            i {
-                font-size: 35px;
-                line-height: 65px;
-                margin-right: 10px;
-                color: #ff6b00;
+            .ucard-adv {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                width: calc(100%/3);
+                text-align: center;
+    
+                i {
+                    font-size: 35px;
+                    line-height: 65px;
+                    margin-right: 10px;
+                    color: #ff6b00;
+                }
+    
+                .ucard-adv-txt {
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: normal;
+                    color: #000;
+                    text-align: left;
+                }
             }
+        }
 
-            .ucard-adv-txt {
-                font-family: CocoSharp, Arial;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: normal;
-                color: #000;
-                text-align: left;
-            }
+        .ucard-btn-mob{
+            display: none;
         }
     }
 }

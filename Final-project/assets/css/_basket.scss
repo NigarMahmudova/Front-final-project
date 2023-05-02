@@ -105,6 +105,11 @@
             color: #000;
         }
 
+        .buttons{
+            display: flex;
+            justify-content: space-between
+        }
+
         #btn-submit,
         #btn-clear {
             @extend .btn;

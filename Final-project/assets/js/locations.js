@@ -1,6 +1,6 @@
-let buttons = document.querySelectorAll('.locations-links .locations-item');
+let loc_buttons = document.querySelectorAll('.locations-links .locations-item');
 
-for(let btn of buttons){
+for(let btn of loc_buttons){
     btn.onclick = function(e) {
         e.preventDefault();
         let active = document.querySelector('.loc-active');

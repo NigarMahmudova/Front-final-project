@@ -71,3 +71,30 @@ let close = document.querySelector('#js-search .search-content-body-close');
 close.onclick = function () {
     search_content.classList.remove('active');
 }
+
+
+// Mobile exchange
+let exc_buttons = document.querySelectorAll('.exc-box-mob .exc-item');
+
+for(let btn of exc_buttons){
+    btn.onclick = function(e) {
+        e.preventDefault();
+        let active = document.querySelector('.exc-mob-active');
+
+        active.classList.remove('exc-mob-active');
+        this.classList.add('exc-mob-active');
+
+
+        let data_id = this.getAttribute('data-id');
+        let exc_contents = document.querySelectorAll('.exc-content-mob .exchange-item');
+
+        for(let content of exc_contents){
+            if(content.id === data_id){
+                content.classList.remove('d-none');
+            }
+            else{
+                content.classList.add('d-none');
+            }
+        }
+    }
+}

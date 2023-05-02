@@ -270,7 +270,10 @@
     }
 
 
-
+    //Slider
+    .slider {
+        margin-top: 16px;
+    }
 
     //Statistic section 
 
@@ -370,9 +373,273 @@
         }
     }
 
+    // Ubank section
+    .ubank-wrapper {
+        display: block !important;
+
+        .ubank {
+            height: 170px !important;
+            width: auto !important;
+
+            .ubank-img {
+                width: auto;
+                float: right !important;
+                max-width: 60% !important;
+                height: auto !important;
+                right: 40px !important;
+                top: -51px !important;
+            }
+        }
+
+        .ubank-text {
+            width: 100% !important;
+            float: none;
+            padding-right: 20px !important;
+            padding-left: 30px !important;
+            padding-top: 10px;
+            margin-top: 20px !important;
+
+            .ubank-header {
+                font-size: 20px !important;
+                line-height: normal !important;
+                margin-bottom: 10px !important;
+            }
+
+            .ubank-desc {
+                margin-bottom: 20px !important;
+                font-size: 12px !important;
+                line-height: normal !important;
+            }
+
+            .links {
+                margin-bottom: 10px !important;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    margin-right: 3px !important;
+
+                    img {
+                        width: 90px !important;
+                        height: 25px !important;
+                    }
+                }
+            }
+
+            .ubank-extras {
+                display: block !important;
+
+                .btn-extra {
+                    font-size: 12px !important;
+                    padding: 14px 42px !important;
+                    margin-bottom: 20px;
+                }
+
+                // .fill-orange {
+                //     padding: 14px 128px !important;
+                // }
+            }
+
+            #ubank {
+                .ubank-img {
+                    width: 290px !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+
     //Exchange section
 
+    .exchange-box-wrapper {
+        display: none;
+    }
 
+    .exchange-wrapper {
+        padding: 20px 30px !important;
+
+        .exchange-header {
+            font-size: 20px !important;
+            line-height: normal;
+            margin-bottom: 15px !important;
+            font-weight: 800;
+        }
+
+        .exchange-box-wrapper-mobile {
+            display: block !important;
+
+            .exc-box-mob {
+                display: block;
+                width: auto;
+                display: flex;
+                align-items: flex-start;
+                overflow-x: auto;
+
+                .exc-item {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    margin-right: 10px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: normal;
+                    text-align: center;
+                    white-space: nowrap;
+                    color: #a1a1a1;
+                    border-radius: 25px;
+                    border: 2px solid #969696;
+                }
+
+                .exc-mob-active {
+                    border: 2px solid #ff6400;
+                    margin-bottom: 20px;
+                    border-radius: 25px;
+                    color: #ff6400 !important;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        bottom: -4px;
+                        transform: rotateZ(-45deg) translate(-50%);
+                        width: 16px;
+                        height: 16px;
+                        border-left: 2px solid #ff6400;
+                        border-bottom: 2px solid #ff6400;
+                        content: '';
+                        left: 50%;
+                        background: #fafafa;
+                    }
+                }
+            }
+
+            .exc-content-mob {
+                margin-bottom: 20px;
+
+                .exc-item-date {
+                    padding-bottom: 30px;
+                    height: auto;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: rgba(50, 50, 50, .5);
+                    margin-bottom: 30px;
+                }
+
+                .exc-item-body {
+                    table {
+                        width: 100%;
+
+                        thead {
+                            font-size: 14px;
+                            color: #acb3b8;
+                            line-height: 18px;
+                            text-align: left;
+                            font-weight: 400;
+                            font-family: CocoSharp, Arial;
+
+                            tr {
+                                th {
+                                    border-bottom: 1px solid #d6d9db;
+                                    padding-bottom: 11px;
+                                    width: 33.3333333%;
+                                    font-size: 12px;
+                                    font-weight: 400 !important;
+                                    padding-right: 60px !important;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            line-height: 14px;
+                            font-family: CocoSharp, Arial;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #000;
+
+                            tr {
+                                td {
+                                    width: 33.3333333%;
+                                    padding: 15px 0;
+                                    white-space: nowrap;
+                                    color: #323232;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .exc-convertor {
+                height: auto;
+                margin-bottom: 20px;
+                background: #fff;
+                box-shadow: 0 10px 25px -10px rgba(0, 0, 0, .1);
+                padding: 50px 30px;
+                border-radius: 10px;
+
+                .exc-header {
+                    line-height: 18px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #000;
+                    padding-bottom: 10px;
+                }
+
+                .exc-date {
+                    padding-bottom: 30px;
+                    height: auto;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: rgba(50, 50, 50, .5);
+                }
+
+                .exc-calc {
+                    overflow: hidden;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(50, 50, 50, .1);
+                    margin-bottom: 10px;
+                    float: left;
+                    width: 100%;
+                    margin-right: 0;
+
+                    .exc-calc-inp {
+                        width: 60%;
+                        border: none;
+                        background: 0 0;
+                        font-family: CocoSharp, Arial;
+                        font-weight: 700;
+                        font-size: 15px;
+                        color: #000;
+                        line-height: 47px;
+                    }
+
+                    .exc-calc-inp {
+                        display: inline-block;
+                        padding-right: 25px;
+                        position: relative;
+
+                        .select-inp {
+                            z-index: 1;
+                            border: none;
+                            background: 0 0;
+                            appearance: none;
+                            padding-right: 12px;
+                            font-family: CocoSharp, Arial;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 47px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
@@ -419,6 +686,245 @@
         .footer-links {
             display: flex;
             justify-content: center;
+        }
+    }
+
+
+    // Cards
+    .cards-wrapper {
+        margin-top: 20px;
+
+        .cards-header {
+            font-size: 22px;
+            line-height: normal;
+        }
+
+        .ucard {
+            padding: 30px 40px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 10px;
+            flex-direction: column;
+
+            .ucard-img-box {
+                max-width: 100%;
+                width: 100% !important;
+                margin-bottom: 20px;
+                position: relative;
+                min-height: 1px;
+                padding: 0;
+
+                img {
+                    max-width: 100% !important;
+                }
+            }
+
+            .ucard-text {
+                width: 100%;
+                padding: 0;
+
+                .ucard-header {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 0;
+
+                    .ucard-title {
+                        font-size: 18px;
+                        margin-bottom: 0;
+                    }
+
+                    .ucard-btn-desk {
+                        display: none;
+                    }
+                }
+
+                .ucard-desc {
+                    text-align: center;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: normal;
+                }
+
+                .ucard-adv {
+                    width: calc(100%/3);
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    align-items: center;
+
+                    .ucard-adv-txt {
+                        text-align: center;
+                        line-height: 12px;
+                        font-family: CocoSharp, Arial;
+                        font-weight: 700;
+                        font-size: 12px;
+                        color: #000;
+                    }
+                }
+
+                .ucard-btn-mob {
+                    display: block;
+                    display: inline-block;
+                    padding: 14px 30px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    background: #ff6400;
+                    border-radius: 25px;
+                    box-shadow: 0 10px 10px -10px rgba(255, 107, 0, .51);
+
+                    a {
+                        color: #fff !important;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .commoncards-card {
+            width: 100%;
+            padding: 25px 40px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            align-items: center;
+
+            .commoncards-img {
+                width: auto;
+                max-width: 100%;
+                float: none;
+                margin-bottom: 20px;
+            }
+
+            .commoncards-text {
+                text-align: center;
+                margin-top: 10px;
+
+                p {
+                    font-weight: 600;
+                    font-family: CocoSharp, Arial;
+                }
+            }
+        }
+    }
+
+
+    //Basket
+    .empty-basket {
+        margin-top: 20px;
+
+        span {
+            font-size: 11px;
+            margin-left: 15px;
+        }
+    }
+
+    .basket-card {
+        padding: 30px 25px;
+
+        .basket-card-header {
+            .basket-card-title {
+                font-weight: 600 !important;
+                font-size: 14px !important;
+            }
+
+            .quantity,
+            p,
+            i {
+                line-height: 30px;
+            }
+        }
+    }
+
+    .content-box {
+        .buttons {
+            flex-direction: column;
+
+            button {
+                margin-bottom: 20px;
+            }
+
+            #btn-continue {
+                a {
+                    padding: 14px 108px !important;
+                }
+            }
+        }
+    }
+
+
+    //Locations
+
+    .locations-wrapper {
+        margin-top: 20px;
+
+        .loc-header {
+            h1 {
+                font-size: 22px;
+                line-height: normal;
+            }
+
+            .locations-links {
+                width: auto !important;
+                display: flex !important;
+                align-items: flex-start !important;
+                overflow-x: auto !important;
+
+                .locations-item {
+                    display: block;
+                    margin-top: 0;
+                    padding: 10px 20px;
+                    margin-right: 10px;
+                    font-family: CocoSharp, Arial;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: normal;
+                    text-align: center;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .content-wrapper {
+            .content {
+                flex-wrap: wrap;
+                padding: 20px 40px;
+                justify-content: space-between;
+
+                .locations-name {
+                    width: 100%;
+                    padding: 0;
+                    margin-bottom: 10px;
+                    border: none;
+                    display: block;
+                    font-size: 14px;
+
+                    .address {
+                        font-size: 12px;
+                    }
+                }
+
+                .locations-extra {
+                    width: 48%;
+                    padding: 0;
+                    border: none;
+                    font-size: 10px;
+                    line-height: normal;
+
+                    .clock-icon {
+                        margin-right: 10px;
+                        font-size: 25px !important;
+                    }
+
+                    .info-box {
+                        padding: 4px 8px;
+                        margin-right: 10px;
+                        border: 2px solid #FF6400;
+                    }
+                }
+            }
+        }
+
+        #warning{
+            padding: 20px 40px;
         }
     }
 }
