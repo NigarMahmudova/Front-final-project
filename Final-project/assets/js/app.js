@@ -98,11 +98,23 @@ mode_btn.onclick = function () {
         sun.classList.remove('d-none');
         moon.classList.add('d-none');
         document.body.classList.add('dark-mode');
+
+        document.querySelector('.ucard-text .ucard-desc').style.color = 'white';
+        document.querySelector('.ubank-text .ubank-desc').style.color = 'white';
+        document.querySelector('.exc-cnv-header .exc-header').style.color = 'white';
+        document.querySelector('.exc-cnv-header .exc-date').style.color = 'white';
+        document.querySelector('.footer-text').style.color = 'white';
     }
     else {
         sun.classList.add('d-none');
         moon.classList.remove('d-none');
         document.body.classList.remove('dark-mode');
+
+        document.querySelector('.ucard-text .ucard-desc').style.color = 'black';
+        document.querySelector('.ubank-text .ubank-desc').style.color = 'black';
+        document.querySelector('.exc-cnv-header .exc-header').style.color = 'black';
+        document.querySelector('.exc-cnv-header .exc-date').style.color = 'black';
+        document.querySelector('.footer-text').style.color = 'black';
     }
 
 
@@ -121,11 +133,7 @@ mode_btn.onclick = function () {
     network_loc.classList.toggle('dark-mode-card');
     network_que.classList.toggle('dark-mode-card');
 
-    document.querySelector('.ucard-text .ucard-desc').style.color = 'white';
-    document.querySelector('.ubank-text .ubank-desc').style.color = 'white';
-    document.querySelector('.exc-cnv-header .exc-header').style.color = 'white';
-    document.querySelector('.exc-cnv-header .exc-date').style.color = 'white';
-    document.querySelector('.footer-text').style.color = 'white';
+
 
     for (let item of header_top) {
         item.classList.toggle('dark-mode-text');
@@ -135,64 +143,64 @@ mode_btn.onclick = function () {
         item.classList.toggle('dark-mode-text');
     }
 
-    for(let item of nav_link){
+    for (let item of nav_link) {
         item.classList.toggle('dark-mode-text');
     }
 
-    for(let item of nav_tel){
+    for (let item of nav_tel) {
         item.classList.toggle('dark-mode-border');
         item.classList.toggle('dark-mode-text');
     }
 
-    for(let item of statistic_box){
+    for (let item of statistic_box) {
         item.classList.toggle('dark-mode-card');
     }
 
-    for(let item of st_caption){
+    for (let item of st_caption) {
         item.classList.toggle('dark-mode-text');
     }
 
-    for(let item of st_desc){
+    for (let item of st_desc) {
         item.classList.toggle('dark-mode-text');
     }
 
-    for(let item of exchange_header){
+    for (let item of exchange_header) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of exchange_date){
+    for (let item of exchange_date) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of ucard_btn){
+    for (let item of ucard_btn) {
         item.classList.toggle('dark-mode-border');
-    } 
-    
-    for(let item of exchange_data){
-        item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of exc_inp){
+    for (let item of exchange_data) {
+        item.classList.toggle('dark-mode-text');
+    }
+
+    for (let item of exc_inp) {
         item.classList.toggle('dark-mode-inp');
-    } 
+    }
 
-    for(let item of news_cards){
+    for (let item of news_cards) {
         item.classList.toggle('dark-mode-card');
-    } 
+    }
 
-    for(let item of news_summary){
+    for (let item of news_summary) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of network_sum){
+    for (let item of network_sum) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of footer_first){
+    for (let item of footer_first) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 
-    for(let item of footer_child){
+    for (let item of footer_child) {
         item.classList.toggle('dark-mode-text');
-    } 
+    }
 }
