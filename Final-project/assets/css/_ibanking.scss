@@ -218,12 +218,6 @@
 
                         &:focus {
                             outline: none;
-
-                            // label {
-                            //     top: -20px !important;
-                            //     font-size: 14px !important;
-                            //     color: #e28116 !important;
-                            // }
                         }
                     }
 
@@ -241,43 +235,20 @@
                     }
 
                     .bar {
-                        position: relative;
-                        display: block;
-                        width: 95%;
+                        position: absolute;
+                        bottom: 0;
+                        height: 2px;
+                        width: 100%;
 
                         &::before {
-                            content: '';
-                            left: 50%;
-                        }
-
-                        &::after {
-                            content: '';
-                            right: 50%;
-                        }
-
-                        &::before {
-                            content: '';
-                            height: 2px;
-                            width: 0;
-                            bottom: 1px;
                             position: absolute;
-                            background: #f47123;
-                            transition: .2s ease all;
-                            -moz-transition: .2s ease all;
-                            -webkit-transition: .2s ease all;
-                        }
-
-                        &::after {
-                            content: '';
-                            height: 2px;
-                            width: 0;
-                            bottom: 1px;
-                            position: absolute;
-                            background: #f47123;
-                            transition: .2s ease all;
-                            -moz-transition: .2s ease all;
-                            -webkit-transition: .2s ease all;
-                        }
+                            content: "";
+                            height: 100%;
+                            width: 100%;
+                            background-color: #fd9b00;
+                            transform: scaleX(0);
+                            transition: transform 0.3s ease;
+                        } 
                     }
 
                     .country-codes {

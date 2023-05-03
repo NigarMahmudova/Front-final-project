@@ -89,43 +89,29 @@
     color: #6f6f6f;
 }
 
+.login-inputs .input .bar {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
 input:focus {
     outline: none;
 }
 
-.bar{
-    position: relative;
-    display: block;
-    width: 95%;
-    color: #fd9b00;
-}
-
-.login-inputs .input:focus .bar::before{
-    width: 50%;
-}
-
-.bar::before{
-    left: 50%;
-}
-
-.bar::before, .bar::after{
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
+.login-inputs .input .bar::before {
     position: absolute;
-    background: #f47123;
-    transition: .2s ease all;
-    -moz-transition: .2s ease all;
-    -webkit-transition: .2s ease all;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #fd9b00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
 }
 
-.login-inputs .input:focus .bar::after{
-    width: 50%;
-}
-
-.bar::after{
-    right: 50%;
+.login-inputs .input input:focus~.bar::before {
+    transform: scaleX(1);
 }
 
 .info-icon {
@@ -165,6 +151,27 @@ input:focus {
     outline: none;
 }
 
+.bottom-code .input .bar {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.bottom-code .input .bar::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #fd9b00;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.bottom-code .input input:focus~.bar::before {
+    transform: scaleX(1);
+}
+
 .bottom-code .input img {
     top: 14px;
     position: absolute;
@@ -188,7 +195,6 @@ input:focus {
 
 .forgot-password a {
     float: right;
-    padding-right: 27px;
     color: #7977a1;
     text-decoration: underline;
     text-underline-position: under;
@@ -217,68 +223,9 @@ input:focus {
 }
 
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 5px;
     height: 5px;
     background-color: #ff6400;
     -webkit-border-radius: 4px;
 }
-
-
-/* .form {
-    width: 30%;
-    position: relative;
-    height: 60px;
-    overflow: hidden;
-  }
-  
-  .form input {
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    padding-top: 20px;
-    border: none;
-    background-color: #fff;
-  }
-  .form label {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid rgba(50,50,50,.5);;
-  }
-  .form label::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    border-bottom: 3px solid #FF6400;
-    transform: translateX(-100%);
-    transition: all 0.3s ease;
-  }
-  
-  .content-name {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    padding-bottom: 5px;
-    transition: all 0.3s ease;
-  }
-  .form input:focus {
-    outline: none;
-  }
-  .form input:focus + .label-name .content-name,
-  .form input:valid + .label-name .content-name {
-    transform: translateY(-150%);
-    font-size: 14px;
-    left: 0px;
-    color: #FF6400;
-  }
-  .form input:focus + .label-name::after,
-  .form input:valid + .label-name::after {
-    transform: translateX(0%);
-  } */
